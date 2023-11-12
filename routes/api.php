@@ -78,3 +78,5 @@ Route::get("getOrderItemFromID/{orderID}",[ OrderController::class, "getOrderIte
 Route::post("contactform", [CustomerController::class, "contactForm"]);
 
 Route::resource('faqs', FaqsController::class);
+
+Route::get("getFilter",[ ProductVariantController::class, "getFilter"]);
