@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateSliderRequest;
 use App\Models\Slider;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
+use App\GoogleStorageHelper\GoogleCloudStorage;
 
 class SliderController extends Controller
 {
@@ -22,18 +23,9 @@ class SliderController extends Controller
         $slider->subtitle = $subtitle;
         $slider->sort_order = $sortorder;
 
-        if ($request->hasFile("sliderimage")){
-            $destinationPath = "images/slider/";
-            $file = $request->sliderimage;
-            $extension = $file->getClientOriginalExtension();
-            $fileName = $title . rand(1111,9999) . "." . $extension;
-
-            $path = preg_replace('/\s+/', '', $fileName);
-
-            $file->move($destinationPath, $path);
-
+        if ($request->hasFile("sliderimage") && $request->sliderimage instanceof \Illuminate\Http\UploadedFile) {
+            $path = GoogleCloudStorage::uploadFile($request->sliderimage, "sliders");
             $slider->image_path = $path;
-
         }
 
         $slider->save();
@@ -59,7 +51,7 @@ class SliderController extends Controller
             $destinationPath = "images/slider/";
             $file = $request->sliderimage;
             $extension = $file->getClientOriginalExtension();
-            $fileName = $title . rand(1111,9999) . "." . $extension;
+            $fileName =  rand(111111,999999) . "." . $extension;
 
             $path = preg_replace('/\s+/', '', $fileName);
 
@@ -173,11 +165,8 @@ class SliderController extends Controller
     public function destroy(string $id)
     {
         $slider = Slider::find ($id);
-        $imagePath = 'public/sliders/' . $slider->image_path;
 
-        if (Storage::exists($imagePath)) {
-            Storage::delete($imagePath);
-        }
+        GoogleCloudStorage::deleteFile($slider->image_path);
 
         $slider->delete();
 

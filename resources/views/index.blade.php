@@ -253,7 +253,7 @@
                                     <td><strong>#Order-{{$item->orderid}}</strong></td>
                                     <td><img class="avatar rounded" src="{{asset("images/xs/avatar2.svg")}}" alt="">{{$item->first_name}} {{$item->last_name}}</td>
                                     <td><span class="badge bg-{{$color}}">{{$item->status}}</span></td>
-                                    <td>{{ Session::get('eszCurrencySymbol')}}{{$item->total_price}}</td>
+                                    <td>{{$item->total_price}}</td>
                                     <td>{{$item->payment_method}}</td>
                                     <td>{{$item->created_at}}</td>
                                     <td>

@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateBannerRequest;
 use App\Models\Banner;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
+use App\GoogleStorageHelper\GoogleCloudStorage;
 
 class BannerController extends Controller
 {
@@ -22,11 +23,16 @@ class BannerController extends Controller
         $slider->subtitle = $subtitle;
         $slider->sort_order = $sortorder;
 
-        if ($request->hasFile("sliderimage")){
+        if ($request->hasFile("sliderimage") && $request->sliderimage instanceof \Illuminate\Http\UploadedFile) {
+            $path = GoogleCloudStorage::uploadFile($request->sliderimage, "banners");
+            $slider->image_path = $path;
+        }
+
+       /*  if ($request->hasFile("sliderimage")){
             $destinationPath = "images/banner/";
             $file = $request->sliderimage;
             $extension = $file->getClientOriginalExtension();
-            $fileName = $title . rand(1111,9999) . "." . $extension;
+            $fileName =  rand(111111,999999) . "." . $extension;
 
            
             $path = preg_replace('/\s+/', '', $fileName);
@@ -35,7 +41,7 @@ class BannerController extends Controller
 
             $slider->image_path = $path;
 
-        }
+        } */
 
         $slider->save();
 
@@ -58,7 +64,7 @@ class BannerController extends Controller
             $destinationPath = "images/banner/";
             $file = $request->editsliderimage;
             $extension = $file->getClientOriginalExtension();
-            $fileName = $edittitle . rand(1111,9999) . "." . $extension;
+            $fileName =  rand(111111,999999) . "." . $extension;
 
            
             $path = preg_replace('/\s+/', '', $fileName);
@@ -111,6 +117,11 @@ class BannerController extends Controller
         $banner->title = $data["title"];
         $banner->subtitle = $data["subtitle"];
         $banner->sort_order=  $data["sort_order"];
+
+        if ($request->hasFile("image_path") && $request->hasFile("image_path") instanceof \Illuminate\Http\UploadedFile) {
+            $path = GoogleCloudStorage::uploadFile($request->sliderimage, "sliders");
+            $banner->image_path = $path;
+        }
 
         if ($request->hasFile('image_path')) {
 
@@ -171,11 +182,8 @@ class BannerController extends Controller
     public function destroy(string $id)
     {
         $banner = Banner::find ($id);
-        $imagePath = 'public/banners/' . $banner->image_path;
-
-        if (Storage::exists($imagePath)) {
-            Storage::delete($imagePath);
-        }
+       
+        GoogleCloudStorage::deleteFile($banner->image_path);
 
         $banner->delete();
 
@@ -185,3 +193,4 @@ class BannerController extends Controller
         ]);
     }
 }
+

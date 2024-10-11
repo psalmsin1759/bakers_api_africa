@@ -13,10 +13,26 @@ use App\Models\ProductCategory;
 use App\Models\Category;
 use App\Models\ProductVariant;
 use Illuminate\Support\Facades\DB;
+use App\GoogleStorageHelper\GoogleCloudStorage;
 
 
 class ProductController extends Controller
 {
+
+    public function searchProduct(Request $request){
+
+        $keyword = $request->keyword;
+
+       // $keyword = $request->input('keyword');
+        $products = Product::search($keyword);
+
+        return response()->json([
+            'success'   => true,
+            'message'   => "success",
+            "data" => $products
+        ]);
+
+    }
 
     public function addFeaturedProduct(Request $request){
 
@@ -98,53 +114,43 @@ class ProductController extends Controller
         if ($new != null){
             $product->new = $new;
         } */
-        
-        if ($request->hasFile("imageproductimage")){
-            $destinationPath = "images/product/";
-            $file = $request->imageproductimage;
-            $extension = $file->getClientOriginalExtension();
-            $fileName = $sku . rand(1111,9999) . "." . $extension;
-            $fileName = preg_replace('/\s+/', '', $fileName);
-            $file->move($destinationPath, $fileName);
 
+        if ($request->hasFile("imageproductimage") && $request->imageproductimage instanceof \Illuminate\Http\UploadedFile) {
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimage, "products");   
             ProductImage::create([
                 "product_id" => $productID,
-                "path" => $fileName
+                "path" => $path
             ]);
-            
         }
 
-        if ($request->hasFile("imageproductimageone")){
-            $destinationPath = "images/product/";
-            $file = $request->imageproductimageone;
-            $extension = $file->getClientOriginalExtension();
-            $fileName = $sku . rand(1111,9999) . "." . $extension;
-            $fileName = preg_replace('/\s+/', '', $fileName);
-            $file->move($destinationPath, $fileName);
-
+        if ($request->hasFile("imageproductimageone") && $request->imageproductimageone instanceof \Illuminate\Http\UploadedFile) {
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimageone, "products");   
             ProductImage::create([
                 "product_id" => $productID,
-                "path" => $fileName
+                "path" => $path
             ]);
+        }
+
+        if ($request->hasFile("imageproductimagetwo") && $request->imageproductimagetwo instanceof \Illuminate\Http\UploadedFile) {
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimagetwo, "products");   
+            ProductImage::create([
+                "product_id" => $productID,
+                "path" => $path
+            ]);
+
 
         }
 
-        if ($request->hasFile("imageproductimagetwo")){
-            $destinationPath = "images/product/";
-            $file = $request->imageproductimagetwo;
-            $extension = $file->getClientOriginalExtension();
-            $fileName = $sku . rand(1111,9999) . "." . $extension;
-            $fileName = preg_replace('/\s+/', '', $fileName);
-            $file->move($destinationPath, $fileName);
-
+        if ($request->hasFile("imageproductimagethree") && $request->imageproductimagetwo instanceof \Illuminate\Http\UploadedFile) {
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimagethree, "products");   
             ProductImage::create([
                 "product_id" => $productID,
-                "path" => $fileName
+                "path" => $path
             ]);
 
-        }
 
-        
+        }
+  
 
         $category = $request->category;    
         if ($category != null){
@@ -502,54 +508,39 @@ class ProductController extends Controller
         $product->save();
 
         
-        if ($request->hasFile("imageproductimage")){
-            $destinationPath = "images/product/";
-            $file = $request->imageproductimage;
-            $extension = $file->getClientOriginalExtension();
-            $fileName = $sku . rand(1111,9999) . "." . $extension;
-            $fileName = preg_replace('/\s+/', '', $fileName);
-            $file->move($destinationPath, $fileName);
+       
+
+        if ($request->hasFile("imageproductimage") && $request->imageproductimage instanceof \Illuminate\Http\UploadedFile) {
 
             ProductImage::where("product_id", $productid)->delete();
 
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimage, "products");   
             ProductImage::create([
                 "product_id" => $productid,
-                "path" => $fileName
+                "path" => $path
             ]);
+        }
+
+        if ($request->hasFile("imageproductimageone") && $request->imageproductimageone instanceof \Illuminate\Http\UploadedFile) {
+
+            //ProductImage::where("product_id", $productid)->delete();
             
-        }
-
-        if ($request->hasFile("imageproductimageone")){
-            $destinationPath = "images/product/";
-            $file = $request->imageproductimageone;
-            $extension = $file->getClientOriginalExtension();
-            $fileName = $sku . rand(1111,9999) . "." . $extension;
-            $fileName = preg_replace('/\s+/', '', $fileName);
-            $file->move($destinationPath, $fileName);
-
-           // ProductImage::where("product_id", $product_id)->delete();
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimageone, "products");   
             ProductImage::create([
                 "product_id" => $productid,
-                "path" => $fileName
+                "path" => $path
             ]);
-
         }
 
-        if ($request->hasFile("imageproductimagetwo")){
-            $destinationPath = "images/product/";
-            $file = $request->imageproductimagetwo;
-            $extension = $file->getClientOriginalExtension();
-            $fileName = $sku . rand(1111,9999) . "." . $extension;
-            $fileName = preg_replace('/\s+/', '', $fileName);
-            $file->move($destinationPath, $fileName);
+        if ($request->hasFile("imageproductimagetwo") && $request->imageproductimagetwo instanceof \Illuminate\Http\UploadedFile) {
 
-            //ProductImage::where("product_id", $product_id)->delete();
-
+            //ProductImage::where("product_id", $productid)->delete();
+            
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimagetwo, "products");   
             ProductImage::create([
                 "product_id" => $productid,
-                "path" => $fileName
+                "path" => $path
             ]);
-
         }
 
         return redirect("product/edit/"  . $productid)->with('success','Product Updated');

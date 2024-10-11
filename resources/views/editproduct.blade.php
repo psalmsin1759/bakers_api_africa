@@ -96,7 +96,7 @@
                                
                                 <div class="col-md-6">
 
-                                    @if ($productImages[0])
+                                    @if (isset($productImages[0]))
                                         <img style="width: 200px; height: 300px" src="{{asset("images/product/" . $productImages[0]->path)}}" alt="product_small_img1" />
                    
                                     @endif
@@ -110,7 +110,7 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    @if ($productImages[1])
+                                    @if (isset($productImages[1]))
                                         <img style="width: 200px; height: 300px" src="{{asset("images/product/" . $productImages[1]->path)}}" alt="product_small_img1" />
                                     @endif
                                 </div>
@@ -122,7 +122,7 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    @if ($productImages[1])
+                                    @if (isset($productImages[2]))
                                     <img style="width: 200px; height: 300px" src="{{asset("images/product/" . $productImages[2]->path)}}" alt="product_small_img1" />
                                     @endif
                                 </div>

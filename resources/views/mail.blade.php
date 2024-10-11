@@ -75,10 +75,11 @@
             
                                 <div class="col-12">
                                    
+                                    <textarea id="editor" name="body" required>
+                                      <p>Enter mail body here</p>
+                                   </textarea>
                                        
-                                        <div id="editor" name="description">
-                                            <h4>Enter Body Here</h4>
-                                        </div>
+                                      
                                    
                                 </div>
             

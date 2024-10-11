@@ -6,6 +6,8 @@ use App\Http\Requests\StoreNewsletterRequest;
 use App\Http\Requests\UpdateNewsletterRequest;
 use App\Models\Newsletter;
 use Illuminate\Http\Request;
+use \App\Mail\MailHelper;
+use Illuminate\Support\Facades\Mail;
 
 class NewsletterController extends Controller
 {
@@ -136,6 +138,7 @@ class NewsletterController extends Controller
 
         $subject = $request->subject;
         $body = $request->body;
+       
 
         $searchForValue = ',';
 
@@ -148,10 +151,12 @@ class NewsletterController extends Controller
 
             $emailArray = explode(',', $emails);
             foreach ($emailArray as $recipient) {
+                Mail::to($recipient)->send(new MailHelper($subject, $body));
                 //Mail::to($recipient)->send(new \App\Mail\AdminSendMail($storename, $myfrom, $subject, $body));
             }
             
         }else{
+            Mail::to($emails)->send(new MailHelper($subject, $body));
             //Mail::to($emails)->send(new \App\Mail\AdminSendMail($storename, $myfrom, $subject, $body));
         }
 
