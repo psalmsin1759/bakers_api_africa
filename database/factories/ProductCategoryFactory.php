@@ -19,12 +19,8 @@ class ProductCategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            'product_id' => function () {
-                return Product::inRandomOrder()->first()->id;
-            },
-            'category_id' => function () {
-                return Category::inRandomOrder()->first()->id;
-            },
+            'product_id' => $this->faker->numberBetween(1, 200), // Product ID between 1 and 100
+            'category_id' => $this->faker->numberBetween(1, 6),  // Category ID between 1 and 6
         ];
     }
 }

@@ -17,10 +17,8 @@ class ProductImageFactory extends Factory
     public function definition(): array
     {
         return [
-            'path' => $this->faker->imageUrl(), 
-            'product_id' => function () {
-                return Product::inRandomOrder()->first()->id;
-            },
+            'path' => $this->faker->imageUrl(600, 900, 'products', true), // Generates a fake image URL
+            'product_id' => Product::factory(), // This will link to a product automatically
         ];
     }
 }

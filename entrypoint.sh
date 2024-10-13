@@ -15,3 +15,16 @@ php artisan migrate --force
 # Start the Laravel application
 exec php artisan serve --host=0.0.0.0 --port=8080
 
+exec php artisan db:seed --class=CategorySeeder
+
+exec php artisan db:seed --class=SliderSeeder
+
+exec php artisan db:seed --class=BannerSeeder
+
+exec php artisan db:seed --class=ProductSeeder
+
+exec php artisan db:seed --class=ProductCategorySeeder
+
+exec php artisan db:seed --class=RelatedProductSeeder
+
+exec php artisan db:seed --class=DeliveryMethodSeeder

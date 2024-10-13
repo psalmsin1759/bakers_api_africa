@@ -17,13 +17,10 @@ class RelatedProductFactory extends Factory
      */
     public function definition(): array
     {
+
         return [
-            'product_id' => function () {
-                return Product::inRandomOrder()->first()->id;
-            },
-            'related_product_id' => function () {
-                return Product::inRandomOrder()->first()->id;
-            },
+            'product_id' => $this->faker->numberBetween(1, 200), 
+            'related_product_id' => $this->faker->numberBetween(1, 50),  
         ];
     }
 }

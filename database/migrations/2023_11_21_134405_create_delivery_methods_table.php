@@ -23,7 +23,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        DB::table('delivery_methods')->insert([
+       /*  DB::table('delivery_methods')->insert([
             'name' => 'Standard',
             'description' => '10 business days',
             'amount' => 10.00, 
@@ -32,7 +32,7 @@ return new class extends Migration
             'default_method' => 1,
             'created_at' => now(),
             'updated_at' => now(),
-        ]);
+        ]); */
     }
 
     /**

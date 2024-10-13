@@ -18,14 +18,13 @@ class ProductVariantFactory extends Factory
     public function definition(): array
     {
         return [
-            'option' => $this->faker->randomElement(['Color', 'Size', 'Material']), // You can modify the options
-            'value' => $this->faker->word, // Random value
-            'quantity' => $this->faker->numberBetween(1, 100),
+            'option' => 'Size', // You can change this if you have other options
+            'value' => $this->faker->randomElement(['S', 'M', 'L', 'XL', '2XL']),
+            'quantity' => $this->faker->numberBetween(0, 100), // Random quantity for each size
             'product_id' => function () {
-                return Product::inRandomOrder()->first()->id;
+                return \App\Models\Product::factory()->create()->id; // This line creates a product to associate with the variant
             },
         ];
-
     }
 
 
