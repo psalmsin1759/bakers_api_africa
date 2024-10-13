@@ -15,7 +15,7 @@ steps:
       - "africa-api-service"
       - "--image=gcr.io/vocal-lamp-422222-s3/africa-api-service"
       - "--platform=managed"
-      - "--region=us-west1"
+      - "--region=us-east1"
       - "--max-instances=29"
       - "--port=8080"
       - "--allow-unauthenticated" # Allow unauthenticated access (optional)
