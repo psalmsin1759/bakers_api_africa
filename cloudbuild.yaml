@@ -18,4 +18,4 @@ steps:
       - "--region=us-east1"
       - "--max-instances=29"
       - "--port=8080"
-      - "--allow-unauthenticated" # Allow unauthenticated access (optional)
+      - "--allow-unauthenticated" # Allow unauthenticated access (optional)d
