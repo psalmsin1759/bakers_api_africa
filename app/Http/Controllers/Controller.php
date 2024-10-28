@@ -123,16 +123,20 @@ class Controller extends BaseController
         return view("index", compact ('totalRevenue', 'orderCount', 'customerCount', 'productCount', 'todayRevenue', 'topSellingProducts', 'latestOrders', 'orderChartjs', 'chartjsPie'));
     }
 
-    public static function totalOrderSumByMonth(){
+    public static function totalOrderSumByMonth()
+    {
         $order = DB::table('orders')
             ->select(DB::raw('SUM(total_price) as total, MONTH(created_at) as month'))
-            ->groupBy(DB::raw('YEAR(created_at) ASC, MONTH(created_at) ASC'))
             ->where('status', 'Success')
+            ->groupBy(DB::raw('YEAR(created_at)'), DB::raw('MONTH(created_at)'))
+            ->orderBy(DB::raw('YEAR(created_at)'), 'ASC')
+            ->orderBy(DB::raw('MONTH(created_at)'), 'ASC')
             ->get()
             ->toArray();
-
+    
         return $order;
     }
+    
 
     public static function getTopSellers(){
 

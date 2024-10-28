@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NoDM no dm nodirectmessage" />
-    <meta name="keywords" content="NoDM no dm nodirectmessage" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <meta name="author" content="QNetix technologies" />
     <meta name="email" content="info@nodirectmessage.com" />
     <meta name="website" content="https://nodirectmessage.com" />
