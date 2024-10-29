@@ -29,7 +29,7 @@
                                                         <a class="single-thumb" id="{{ $item->id }}"
                                                             data-bs-toggle="pill" href="#{{ $item->id }}" role="button"
                                                             aria-controls="{{ $item->id }}">
-                                                            <img src="{{ secure_asset('images/product/' . $item->path) }}"
+                                                            <img src="{{ secure_url('images/product/' . $item->path) }}"
                                                                 alt="">
                                                         </a>
                                                     @endforeach

@@ -18,6 +18,7 @@ class SliderController extends Controller
         $subtitle = $request->subtitle;
         $sortorder = $request->sortorder;
 
+        
         $slider = new Slider();
         $slider->title = $title;
         $slider->subtitle = $subtitle;
@@ -166,7 +167,9 @@ class SliderController extends Controller
     {
         $slider = Slider::find ($id);
 
-        GoogleCloudStorage::deleteFile($slider->image_path);
+        $path = "https://storage.googleapis.com/bakersluxury/" . $slider->image_path;
+
+        GoogleCloudStorage::deleteFile($path);
 
         $slider->delete();
 

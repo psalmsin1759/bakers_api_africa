@@ -40,7 +40,7 @@
 
 
                                             <td> <img style="width: 249px; height: 150px"
-                                                    src="{{ secure_asset('images/slider/' . $item->image_path) }}"
+                                                    src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $item->image_path) }}"
                                                     width="20px" height="20px" /> </td>
                                             <td class="text-center p-3">{{ $item->title }} </td>
                                             <td class="text-center p-3">{{ $item->subtitle }} </td>

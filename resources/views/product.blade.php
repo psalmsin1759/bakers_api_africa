@@ -57,7 +57,7 @@
                                             @if ($item->images->count() > 0)
                                                 <td><a href="{{ secure_url('product/' . $item->id) }}" class="fw-bold"><img
                                                             style="width: 67px; height: 100px"
-                                                            src="{{ secure_asset('images/product/' . $item->images->first()->path) }}"
+                                                            src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $item->images->first()->path) }}"
                                                             class="avatar lg rounded me-2" alt="profile-image"><span>
                                                             {{ $item->name }} </span></a></td>
                                             @else

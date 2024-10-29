@@ -277,11 +277,11 @@
 
                                                             </tbody>
                                                             <!--<tfoot>
-                                                                <tr>
-                                                                    <th>Option</th>
-                                                                    <th>Quantity</th>
-                                                                </tr>
-                                                            </tfoot>-->
+                                                                        <tr>
+                                                                            <th>Option</th>
+                                                                            <th>Quantity</th>
+                                                                        </tr>
+                                                                    </tfoot>-->
 
                                                         </table>
 

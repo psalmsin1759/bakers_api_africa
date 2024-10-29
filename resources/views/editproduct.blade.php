@@ -106,7 +106,7 @@
 
                                         @if (isset($productImages[0]))
                                             <img style="width: 200px; height: 300px"
-                                                src="{{ secure_asset('images/product/' . $productImages[0]->path) }}"
+                                                src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $productImages[0]->path) }}"
                                                 alt="product_small_img1" />
                                         @endif
 
@@ -123,7 +123,7 @@
                                     <div class="col-md-6">
                                         @if (isset($productImages[1]))
                                             <img style="width: 200px; height: 300px"
-                                                src="{{ secure_asset('images/product/' . $productImages[1]->path) }}"
+                                                src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $productImages[1]->path) }}"
                                                 alt="product_small_img1" />
                                         @endif
                                     </div>
@@ -139,7 +139,7 @@
                                     <div class="col-md-6">
                                         @if (isset($productImages[2]))
                                             <img style="width: 200px; height: 300px"
-                                                src="{{ secure_asset('images/product/' . $productImages[2]->path) }}"
+                                                src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $productImages[2]->path) }}"
                                                 alt="product_small_img1" />
                                         @endif
                                     </div>

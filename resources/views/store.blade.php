@@ -92,51 +92,6 @@
                             </div>
                         </div>
 
-                        <div class="card mb-3">
-                            <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
-                                <h6 class="mb-0 fw-bold ">Images</h6>
-                            </div>
-                            <div class="card-body">
-                                <form>
-                                    <div class="row g-3 align-items-center">
-                                        <div class="col-md-12">
-                                            <label class="form-label">Select Store Logo ( 160 x 60)</label>
-                                            <img src="{{ $store ? secure_asset('images/store/' . $store->logo_path) : secure_url('https://placehold.co/160x60.png') }}"
-                                                height="60" width="160" /><br />
-                                            <small class="d-block text-muted mb-2">Select Store Logo ( 160 x 60))</small>
-                                            <input type="file" name="storelogo" id="input-file-to-destroy"
-                                                class="dropify" data-max-file-size="2M" data-max-height="2000">
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <label class="form-label">Select Footer Logo ( 160 x 60)</label>
-                                            <img src="{{ $store ? secure_asset('images/store/' . $store->footer_logo_path) : secure_url('https://placehold.co/160x60.png') }}"
-                                                height="60" width="160" /><br />
-                                            <small class="d-block text-muted mb-2">Select Footer Logo ( 160 x 60)</small>
-                                            <input type="file" name="footerlogo" id="input-file-to-destroy"
-                                                class="dropify" data-max-file-size="2M" data-max-height="2000">
-                                        </div>
-
-
-
-
-
-                                        <div class="col-md-12">
-
-                                            <div class="row">
-
-
-
-                                            </div><!--end row-->
-
-                                        </div>
-
-
-
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
 
                     </div>
 
