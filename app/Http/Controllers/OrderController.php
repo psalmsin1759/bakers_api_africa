@@ -105,9 +105,9 @@ class OrderController extends Controller
              }
 
            
-            //$this->sendOrderEmail($order, "Order Confirmation");
+            $this->sendOrderEmail($order, "Order Confirmation");
 
-            //$this->sendAdminNotification($order);
+            $this->sendAdminNotification($order);
     
              return response()->json([
                 'success'   => true,
@@ -172,7 +172,7 @@ class OrderController extends Controller
         
         You have new order with id #" . $order->orderid . " from  " . $order->first_name . " (". $order->email . ")<br/>
 
-        Login to the backend <a href='https://admin.houseofeppagelia.com'>https://admin.houseofeppagelia.com</a> to process this order 
+        Login to the backend <a href='https://africabackend.bakersluxury.com'>https://africabackend.bakersluxury.com</a> to process this order 
 
         Best regards";
 
