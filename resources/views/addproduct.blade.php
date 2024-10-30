@@ -3,7 +3,7 @@
     <!-- Body: Body -->
     <div class="body d-flex py-3">
         <div class="container-xxl">
-            <form method="POST" enctype="multipart/form-data" action="{{ url('/product/add') }}">
+            <form method="POST" enctype="multipart/form-data" action="{{ secure_url('/product/add') }}">
                 <div class="row align-items-center">
                     <div class="border-0 mb-4">
                         <div
@@ -277,11 +277,11 @@
 
                                                             </tbody>
                                                             <!--<tfoot>
-                                                                                    <tr>
-                                                                                        <th>Option</th>
-                                                                                        <th>Quantity</th>
-                                                                                    </tr>
-                                                                                </tfoot>-->
+                                                                                        <tr>
+                                                                                            <th>Option</th>
+                                                                                            <th>Quantity</th>
+                                                                                        </tr>
+                                                                                    </tfoot>-->
 
                                                         </table>
 

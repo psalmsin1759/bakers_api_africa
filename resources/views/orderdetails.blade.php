@@ -116,7 +116,7 @@
                     <div class="card">
                         <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
                             <h6 class="mb-0 fw-bold ">Invoice Details</h6>
-                            {{--  <a href="{{url("/vendor/invoice/" . $order->id)}}" class="text-muted">View</a> --}}
+                            {{--  <a href="{{secure_url("/vendor/invoice/" . $order->id)}}" class="text-muted">View</a> --}}
                         </div>
                         <div class="card-body">
                             <div class="row g-3">
@@ -161,7 +161,7 @@
                                             @foreach ($orderDetails as $item)
                                                 <tr>
                                                     <td>
-                                                        <img src="{{ asset('images/product/' . $item->image_path) }}"
+                                                        <img src="{{ secure_asset('images/product/' . $item->image_path) }}"
                                                             class="avatar rounded lg" alt="Product">
                                                     </td>
                                                     <td>
@@ -186,9 +186,9 @@
                                     class="checkout-coupon-total checkout-coupon-total-2 d-flex flex-wrap justify-content-end">
                                     <div class="checkout-total">
                                         <!--<div class="single-total">
-                                                                                    <p class="value">Subotal Price:</p>
-                                                                                    <p class="price">$1096.00</p>
-                                                                                </div>-->
+                                                                                            <p class="value">Subotal Price:</p>
+                                                                                            <p class="price">$1096.00</p>
+                                                                                        </div>-->
                                         <div class="single-total">
                                             <p class="value">Shipping(+):</p>
                                             <p class="price">{{ Session::get('eszCurrencySymbol') }}
@@ -218,7 +218,7 @@
                             <h6 class="mb-0 fw-bold ">Status Orders</h6>
                         </div>
                         <div class="card-body">
-                            <form method="POST" action="{{ url('/order/status') }}">
+                            <form method="POST" action="{{ secure_url('/order/status') }}">
                                 {{ csrf_field() }}
                                 <div class="row g-3 align-items-center">
 

@@ -111,7 +111,7 @@
                     <h5 class="modal-title  fw-bold" id="expaddLabel"> Add</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" enctype="multipart/form-data" action="{{ url('/delivery/add') }}">
+                <form method="POST" enctype="multipart/form-data" action="{{ secure_url('/delivery/add') }}">
                     @csrf
                     <div class="modal-body">
 
@@ -166,7 +166,7 @@
                     <h5 class="modal-title  fw-bold" id="editsliderLabel"> Edit Delivery Method</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" enctype="multipart/form-data" action="{{ url('delivery/edit') }}">
+                <form method="POST" enctype="multipart/form-data" action="{{ secure_url('delivery/edit') }}">
                     <div class="modal-body">
 
                         {{ csrf_field() }}
@@ -231,7 +231,7 @@
                     <h5 class="modal-title fw-bold" id="deleteCategoryLabel">Delete Delivery method</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('delivery/delete') }}">
+                <form method="POST" action="{{ secure_url('delivery/delete') }}">
                     @csrf
 
                     <input type="hidden" name="id" id="deleteDeliveryId">

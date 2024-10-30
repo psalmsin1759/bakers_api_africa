@@ -89,7 +89,7 @@
                     <h5 class="modal-title  fw-bold" id="expeditLabel"> Enable/Disable</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('/vendor/newsletter') }}">
+                <form method="POST" action="{{ secure_url('/vendor/newsletter') }}">
                     {{ csrf_field() }}
                     <div class="modal-body">
 

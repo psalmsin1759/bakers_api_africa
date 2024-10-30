@@ -164,7 +164,7 @@
 
                             <h1>House of Eppagelia</h1>
 
-                            {{-- <img style="height:50px" src="https://www.nodirectmessage.com/assets/images/nodmlogowhite.png" /> --}}
+                            {{-- <img style="height:50px" src="https://www.nodirectmessage.com/secure_assets/images/nodmlogowhite.png" /> --}}
 
                         </td>
                     </tr>

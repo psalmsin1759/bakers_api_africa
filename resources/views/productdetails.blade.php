@@ -29,7 +29,7 @@
                                                         <a class="single-thumb" id="{{ $item->id }}"
                                                             data-bs-toggle="pill" href="#{{ $item->id }}" role="button"
                                                             aria-controls="{{ $item->id }}">
-                                                            <img src="{{ url('images/product/' . $item->path) }}"
+                                                            <img src="{{ secure_url('images/product/' . $item->path) }}"
                                                                 alt="">
                                                         </a>
                                                     @endforeach
@@ -45,7 +45,7 @@
                                                     @foreach ($productImages as $item)
                                                         <a class="single-image tab-pane fade" id="{{ $item->id }}"
                                                             role="tabpanel" aria-labelledby="{{ $item->id }}">
-                                                            <img src="{{ asset('images/product/' . $item->path) }}"
+                                                            <img src="{{ secure_asset('images/product/' . $item->path) }}"
                                                                 alt="">
                                                         </a>
                                                     @endforeach
@@ -128,7 +128,7 @@
                                                             <span class="input-group-text"><i class="fa fa-sort"></i></span>
                                                         </div>
                                                     </div>
-                                                    <a href="{{ url('/product/edit/' . $product->id) }}"
+                                                    <a href="{{ secure_url('/product/edit/' . $product->id) }}"
                                                         class="btn btn-primary mx-1 mt-2  mt-sm-0"><i
                                                             class="fa fa-edit me-1"></i> Edit Product Details</a>
                                                 </div>
@@ -167,7 +167,7 @@
                                             <li class="card mb-2">
                                                 <div class="card-body p-lg-4 p-3">
                                                     <div class="d-flex mb-3 pb-3 border-bottom flex-wrap">
-                                                        <img class="avatar rounded" src="{{asset("dashboardassets/images/xs/avatar9.svg")}}" alt="">
+                                                        <img class="avatar rounded" src="{{secure_asset("dashboardsecure_assets/images/xs/avatar9.svg")}}" alt="">
                                                         <div class="flex-fill ms-3 text-truncate">
                                                             <h6 class="mb-0"><span>{{$item->name}}</span></h6>
                                                             <span class="text-muted">{{$item->created_at}}</span>
@@ -198,7 +198,7 @@
                                             </nav>
                                         </div>
                                         <div class="col-lg-12 col-md-12">
-                                            <form method="POST" action="{{ url('/vendor/product/addreview') }}">
+                                            <form method="POST" action="{{ secure_url('/vendor/product/addreview') }}">
                                                 {{ csrf_field() }}
 
                                                 <input type="hidden" name="productid" value="{{ $product->id }}" />
@@ -378,7 +378,7 @@
                     <h5 class="modal-title  fw-bold" id="expeditLabel"> Edit Product</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('/vendor/product/editinfo') }}">
+                <form method="POST" action="{{ secure_url('/vendor/product/editinfo') }}">
                     <div class="modal-body">
 
                         {{ csrf_field() }}

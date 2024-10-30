@@ -74,7 +74,7 @@
                     <h5 class="modal-title  fw-bold" id="expaddLabel"> Add Address</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('/vendor/address/add') }}">
+                <form method="POST" action="{{ secure_url('/vendor/address/add') }}">
                     <div class="modal-body">
 
                         <div class="deadline-form">
@@ -147,7 +147,7 @@
                     <h5 class="modal-title  fw-bold" id="expeditLabel"> Edit Address</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('/vendor/address/edit') }}">
+                <form method="POST" action="{{ secure_url('/vendor/address/edit') }}">
                     <div class="modal-body">
 
                         {{ csrf_field() }}

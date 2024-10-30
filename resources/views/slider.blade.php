@@ -40,7 +40,7 @@
 
 
                                             <td> <img style="width: 249px; height: 150px"
-                                                    src="{{ url('https://storage.googleapis.com/bakersluxury/' . $item->image_path) }}"
+                                                    src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $item->image_path) }}"
                                                     width="20px" height="20px" /> </td>
                                             <td class="text-center p-3">{{ $item->title }} </td>
                                             <td class="text-center p-3">{{ $item->subtitle }} </td>
@@ -86,7 +86,7 @@
                     <h5 class="modal-title  fw-bold" id="expaddLabel"> Add Slider</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" enctype="multipart/form-data" action="{{ url('/slider/add') }}">
+                <form method="POST" enctype="multipart/form-data" action="{{ secure_url('/slider/add') }}">
                     <div class="modal-body">
 
                         <div class="deadline-form">
@@ -146,7 +146,7 @@
                     <h5 class="modal-title  fw-bold" id="editsliderLabel"> Edit Slider Info</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" enctype="multipart/form-data" action="{{ url('slider/edit') }}">
+                <form method="POST" enctype="multipart/form-data" action="{{ secure_url('slider/edit') }}">
                     <div class="modal-body">
 
                         {{ csrf_field() }}
@@ -199,7 +199,7 @@
                     <h5 class="modal-title fw-bold" id="deleteCategoryLabel">Delete Slider</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('slider/delete') }}">
+                <form method="POST" action="{{ secure_url('slider/delete') }}">
                     @csrf
 
                     <input type="hidden" name="id" id="deleteSliderId">

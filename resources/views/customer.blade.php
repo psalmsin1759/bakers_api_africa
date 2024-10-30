@@ -9,8 +9,8 @@
                         class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
                         <h3 class="fw-bold mb-0">Customers Information</h3>
                         <!--<div class="col-auto d-flex w-sm-100">
-                                                                    <button type="button" class="btn btn-primary btn-set-task w-sm-100" data-bs-toggle="modal" data-bs-target="#expadd"><i class="icofont-plus-circle me-2 fs-6"></i>Add Customers</button>
-                                                                </div>-->
+                                                                            <button type="button" class="btn btn-primary btn-set-task w-sm-100" data-bs-toggle="modal" data-bs-target="#expadd"><i class="icofont-plus-circle me-2 fs-6"></i>Add Customers</button>
+                                                                        </div>-->
                     </div>
                 </div>
             </div> <!-- Row end  -->
@@ -36,9 +36,9 @@
                                     @foreach ($customers as $item)
                                         <tr>
                                             <td>
-                                                <a href="{{ url('/customer/' . $item->id) }}">
+                                                <a href="{{ secure_url('/customer/' . $item->id) }}">
                                                     <img class="avatar rounded"
-                                                        src="{{ asset('dashboardassets/images/xs/avatar1.svg') }}"
+                                                        src="{{ secure_asset('dashboardsecure_assets/images/xs/avatar1.svg') }}"
                                                         alt="">
                                                     <span class="fw-bold ms-1">{{ $item->first_name }}
                                                         {{ $item->last_name }}</span>

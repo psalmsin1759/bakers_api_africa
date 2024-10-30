@@ -5,7 +5,7 @@
     <script>
         try {
             (0, eval)("globalThis._triedToInstallGlobalErrorHandler") || (0, eval)(
-                "/* https://github.com/wallabyjs/console-ninja#how-does-it-work */'use strict';const _0x4821cf=_0xadff;(function(_0x5ad08d,_0x368593){const _0x10a910=_0xadff,_0x2071f7=_0x5ad08d();while(!![]){try{const _0x39b922=parseInt(_0x10a910(0x101))/0x1*(-parseInt(_0x10a910(0x124))/0x2)+-parseInt(_0x10a910(0x12c))/0x3+-parseInt(_0x10a910(0x109))/0x4*(-parseInt(_0x10a910(0x105))/0x5)+parseInt(_0x10a910(0xf8))/0x6*(-parseInt(_0x10a910(0xf6))/0x7)+-parseInt(_0x10a910(0x112))/0x8*(-parseInt(_0x10a910(0x10a))/0x9)+parseInt(_0x10a910(0x154))/0xa*(-parseInt(_0x10a910(0x125))/0xb)+parseInt(_0x10a910(0x146))/0xc;if(_0x39b922===_0x368593)break;else _0x2071f7['push'](_0x2071f7['shift']());}catch(_0x264eed){_0x2071f7['push'](_0x2071f7['shift']());}}}(_0x5ee0,0x49929));var k=Object[_0x4821cf(0xf7)],m=Object[_0x4821cf(0x13e)],N=Object[_0x4821cf(0x13b)],C=Object[_0x4821cf(0x152)],g=Object[_0x4821cf(0x133)],y=Object[_0x4821cf(0x145)][_0x4821cf(0x12f)],O=(_0x527bc7,_0x79fd01,_0x5a6131,_0x12401c)=>{const _0x49610c=_0x4821cf;if(_0x79fd01&&typeof _0x79fd01=='object'||typeof _0x79fd01==_0x49610c(0xfb)){for(let _0x3a3abe of C(_0x79fd01))!y[_0x49610c(0x108)](_0x527bc7,_0x3a3abe)&&_0x3a3abe!==_0x5a6131&&m(_0x527bc7,_0x3a3abe,{'get':()=>_0x79fd01[_0x3a3abe],'enumerable':!(_0x12401c=N(_0x79fd01,_0x3a3abe))||_0x12401c[_0x49610c(0x10b)]});}return _0x527bc7;},E=(_0x3d0608,_0x1fc026,_0x55affa)=>(_0x55affa=_0x3d0608!=null?k(g(_0x3d0608)):{},O(_0x1fc026||!_0x3d0608||!_0x3d0608[_0x4821cf(0x104)]?m(_0x55affa,_0x4821cf(0x138),{'value':_0x3d0608,'enumerable':!0x0}):_0x55affa,_0x3d0608)),u=class{constructor(_0x13eb6e,_0x4312d6,_0xf741f7,_0xa7183f,_0x3940d0){const _0x3db4a0=_0x4821cf;this[_0x3db4a0(0x129)]=_0x13eb6e,this[_0x3db4a0(0x118)]=_0x4312d6,this[_0x3db4a0(0x150)]=_0xf741f7,this[_0x3db4a0(0x15e)]=_0xa7183f,this[_0x3db4a0(0x126)]=_0x3940d0,this[_0x3db4a0(0x107)]=!0x0,this['_allowedToConnectOnSend']=!0x0,this[_0x3db4a0(0x158)]=!0x1,this[_0x3db4a0(0x134)]=!0x1,this[_0x3db4a0(0x149)]=_0x13eb6e[_0x3db4a0(0x11b)]?.[_0x3db4a0(0x15c)]?.[_0x3db4a0(0x14d)]===_0x3db4a0(0x136),this[_0x3db4a0(0x14c)]=!this['global'][_0x3db4a0(0x11b)]?.[_0x3db4a0(0x128)]?.['node']&&!this['_inNextEdge'],this[_0x3db4a0(0x115)]=null,this[_0x3db4a0(0x11a)]=0x0,this['_maxConnectAttemptCount']=0x14,this[_0x3db4a0(0x142)]=_0x3db4a0(0x12e),this[_0x3db4a0(0x127)]=(this['_inBrowser']?'Console\\x20Ninja\\x20failed\\x20to\\x20send\\x20logs,\\x20refreshing\\x20the\\x20page\\x20may\\x20help;\\x20also\\x20see\\x20':_0x3db4a0(0xfd))+this[_0x3db4a0(0x142)];}async[_0x4821cf(0x110)](){const _0x289d04=_0x4821cf;if(this[_0x289d04(0x115)])return this[_0x289d04(0x115)];let _0x57e741;if(this[_0x289d04(0x14c)]||this[_0x289d04(0x149)])_0x57e741=this[_0x289d04(0x129)][_0x289d04(0x157)];else{if(this[_0x289d04(0x129)][_0x289d04(0x11b)]?.[_0x289d04(0x141)])_0x57e741=this[_0x289d04(0x129)][_0x289d04(0x11b)]?.[_0x289d04(0x141)];else try{let _0x10deab=await import(_0x289d04(0x113));_0x57e741=(await import((await import(_0x289d04(0x14a)))[_0x289d04(0xf4)](_0x10deab[_0x289d04(0x135)](this[_0x289d04(0x15e)],'ws/index.js'))['toString']()))['default'];}catch{try{_0x57e741=require(require(_0x289d04(0x113))['join'](this[_0x289d04(0x15e)],'ws'));}catch{throw new Error('failed\\x20to\\x20find\\x20and\\x20load\\x20WebSocket');}}}return this[_0x289d04(0x115)]=_0x57e741,_0x57e741;}[_0x4821cf(0x139)](){const _0x13fb1a=_0x4821cf;this[_0x13fb1a(0x134)]||this[_0x13fb1a(0x158)]||this[_0x13fb1a(0x11a)]>=this[_0x13fb1a(0x148)]||(this[_0x13fb1a(0x156)]=!0x1,this[_0x13fb1a(0x134)]=!0x0,this['_connectAttemptCount']++,this[_0x13fb1a(0x12d)]=new Promise((_0x4e8f6c,_0x41661f)=>{const _0x5aa8d6=_0x13fb1a;this[_0x5aa8d6(0x110)]()['then'](_0x2e3e65=>{const _0x773136=_0x5aa8d6;let _0x56012d=new _0x2e3e65(_0x773136(0x14f)+(!this[_0x773136(0x14c)]&&this[_0x773136(0x126)]?'gateway.docker.internal':this[_0x773136(0x118)])+':'+this['port']);_0x56012d[_0x773136(0x137)]=()=>{const _0x50b7c4=_0x773136;this[_0x50b7c4(0x107)]=!0x1,this[_0x50b7c4(0x144)](_0x56012d),this[_0x50b7c4(0x130)](),_0x41661f(new Error(_0x50b7c4(0x14e)));},_0x56012d[_0x773136(0x119)]=()=>{const _0x11731d=_0x773136;this['_inBrowser']||_0x56012d[_0x11731d(0xf5)]&&_0x56012d[_0x11731d(0xf5)][_0x11731d(0x117)]&&_0x56012d[_0x11731d(0xf5)][_0x11731d(0x117)](),_0x4e8f6c(_0x56012d);},_0x56012d[_0x773136(0x151)]=()=>{const _0x3f3302=_0x773136;this[_0x3f3302(0x156)]=!0x0,this[_0x3f3302(0x144)](_0x56012d),this['_attemptToReconnectShortly']();},_0x56012d[_0x773136(0x11f)]=_0x564908=>{const _0x51d362=_0x773136;try{_0x564908&&_0x564908[_0x51d362(0x114)]&&this[_0x51d362(0x14c)]&&JSON[_0x51d362(0x10e)](_0x564908[_0x51d362(0x114)])['method']==='reload'&&this[_0x51d362(0x129)][_0x51d362(0xfa)]['reload']();}catch{}};})['then'](_0x2b0dc7=>(this[_0x5aa8d6(0x158)]=!0x0,this['_connecting']=!0x1,this['_allowedToConnectOnSend']=!0x1,this[_0x5aa8d6(0x107)]=!0x0,this[_0x5aa8d6(0x11a)]=0x0,_0x2b0dc7))['catch'](_0x9efa84=>(this[_0x5aa8d6(0x158)]=!0x1,this[_0x5aa8d6(0x134)]=!0x1,console[_0x5aa8d6(0x13c)](_0x5aa8d6(0x13d)+this[_0x5aa8d6(0x142)]),_0x41661f(new Error(_0x5aa8d6(0x100)+(_0x9efa84&&_0x9efa84[_0x5aa8d6(0x15d)])))));}));}[_0x4821cf(0x144)](_0x5dcd46){const _0x260ad3=_0x4821cf;this[_0x260ad3(0x158)]=!0x1,this[_0x260ad3(0x134)]=!0x1;try{_0x5dcd46[_0x260ad3(0x151)]=null,_0x5dcd46[_0x260ad3(0x137)]=null,_0x5dcd46[_0x260ad3(0x119)]=null;}catch{}try{_0x5dcd46[_0x260ad3(0x103)]<0x2&&_0x5dcd46[_0x260ad3(0x13f)]();}catch{}}[_0x4821cf(0x130)](){const _0x160428=_0x4821cf;clearTimeout(this['_reconnectTimeout']),!(this[_0x160428(0x11a)]>=this[_0x160428(0x148)])&&(this['_reconnectTimeout']=setTimeout(()=>{const _0x27fc82=_0x160428;this[_0x27fc82(0x158)]||this[_0x27fc82(0x134)]||(this['_connectToHostNow'](),this['_ws']?.[_0x27fc82(0xf3)](()=>this[_0x27fc82(0x130)]()));},0x1f4),this[_0x160428(0xfe)][_0x160428(0x117)]&&this[_0x160428(0xfe)]['unref']());}async[_0x4821cf(0x147)](_0x488a44){const _0x3ea11b=_0x4821cf;try{if(!this[_0x3ea11b(0x107)])return;this[_0x3ea11b(0x156)]&&this[_0x3ea11b(0x139)](),(await this['_ws'])[_0x3ea11b(0x147)](JSON['stringify'](_0x488a44));}catch(_0x356641){console[_0x3ea11b(0x13c)](this[_0x3ea11b(0x127)]+':\\x20'+(_0x356641&&_0x356641['message'])),this['_allowedToSend']=!0x1,this[_0x3ea11b(0x130)]();}}};function _0x5ee0(){const _0x3d4529=['errorHandlerInstalled','getWebSocketClass','_triedToInstallGlobalErrorHandler','4152EkwhzI','path','data','_WebSocketClass','error','unref','host','onopen','_connectAttemptCount','process','1700719608770','node','_console_ninja_session','onmessage','addEventListener','52123','remix','uncaughtException','1122LndiAB','80146kqZHEx','dockerizedApp','_sendErrorMessage','versions','global','unhandledRejection','reason','310563kDohCU','_ws','https://tinyurl.com/37x8b79t','hasOwnProperty','_attemptToReconnectShortly','\\x20server','Unknown\\x20error','getPrototypeOf','_connecting','join','edge','onerror','default','_connectToHostNow','map','getOwnPropertyDescriptor','warn','logger\\x20failed\\x20to\\x20connect\\x20to\\x20host,\\x20see\\x20','defineProperty','close','console','_WebSocket','_webSocketErrorDocsLink','bind','_disposeWebsocket','prototype','2701224DWoJuW','send','_maxConnectAttemptCount','_inNextEdge','url','stack','_inBrowser','NEXT_RUNTIME','logger\\x20websocket\\x20error','ws://','port','onclose','getOwnPropertyNames','1.0.0','490jVRYcd','nuxt','_allowedToConnectOnSend','WebSocket','_connected','127.0.0.1','_consoleNinjaAllowedToStart','forEach','env','message','nodeModules','catch','pathToFileurl','_socket','14CjDrDn','create','132642NxvqLx','split','location','function','now','Console\\x20Ninja\\x20failed\\x20to\\x20send\\x20logs,\\x20restarting\\x20the\\x20process\\x20may\\x20help;\\x20also\\x20see\\x20','_reconnectTimeout','string','failed\\x20to\\x20connect\\x20to\\x20host:\\x20','53txqaEw',\"/Users/shafiq/.vscode/extensions/wallabyjs.console-ninja-1.0.255/node_modules\",'readyState','__es'+'Module','1343885vBXVUZ','next.js','_allowedToSend','call','8MfEoUd','1269NmnxNc','enumerable','\\x20browser','includes','parse'];_0x5ee0=function(){return _0x3d4529;};return _0x5ee0();}function _0xadff(_0x339de0,_0x5ce0b2){const _0x5ee005=_0x5ee0();return _0xadff=function(_0xadffe8,_0x4d2d5b){_0xadffe8=_0xadffe8-0xf3;let _0x328a02=_0x5ee005[_0xadffe8];return _0x328a02;},_0xadff(_0x339de0,_0x5ce0b2);}function f(_0x2e9d3c,_0x2509c9,_0x408802,_0x162de3,_0x30bc0f,_0x412adc){const _0x1e45e5=_0x4821cf;let _0x456d67=_0x408802[_0x1e45e5(0xf9)](',')[_0x1e45e5(0x13a)](_0x1f7de3=>{const _0xc9eb3d=_0x1e45e5;try{_0x2e9d3c[_0xc9eb3d(0x11e)]||((_0x30bc0f===_0xc9eb3d(0x106)||_0x30bc0f===_0xc9eb3d(0x122)||_0x30bc0f==='astro')&&(_0x30bc0f+=!_0x2e9d3c[_0xc9eb3d(0x11b)]?.[_0xc9eb3d(0x128)]?.[_0xc9eb3d(0x11d)]&&_0x2e9d3c[_0xc9eb3d(0x11b)]?.[_0xc9eb3d(0x15c)]?.[_0xc9eb3d(0x14d)]!=='edge'?_0xc9eb3d(0x10c):_0xc9eb3d(0x131)),_0x2e9d3c[_0xc9eb3d(0x11e)]={'id':+new Date(),'tool':_0x30bc0f});let _0x32dd4f=new u(_0x2e9d3c,_0x2509c9,_0x1f7de3,_0x162de3,_0x412adc);return _0x32dd4f[_0xc9eb3d(0x147)][_0xc9eb3d(0x143)](_0x32dd4f);}catch(_0x119f9a){return console[_0xc9eb3d(0x13c)]('logger\\x20failed\\x20to\\x20connect\\x20to\\x20host',_0x119f9a&&_0x119f9a[_0xc9eb3d(0x15d)]),()=>{};}});return _0x3351fe=>_0x456d67[_0x1e45e5(0x15b)](_0x4facee=>_0x4facee(_0x3351fe));}function p(_0x3d4824,_0x1d95ce,_0x39c57b){const _0x377142=_0x4821cf;if(_0x3d4824['_consoleNinjaAllowedToStart']!==void 0x0)return _0x3d4824[_0x377142(0x15a)];let _0x4528ef=_0x3d4824['process']?.[_0x377142(0x128)]?.[_0x377142(0x11d)]||_0x3d4824[_0x377142(0x11b)]?.['env']?.[_0x377142(0x14d)]==='edge';return _0x4528ef&&_0x39c57b===_0x377142(0x155)?_0x3d4824[_0x377142(0x15a)]=!0x1:_0x3d4824[_0x377142(0x15a)]=_0x4528ef||!_0x1d95ce||_0x3d4824[_0x377142(0xfa)]?.['hostname']&&_0x1d95ce[_0x377142(0x10d)](_0x3d4824['location']['hostname']),_0x3d4824[_0x377142(0x15a)];}((_0x50dba0,_0xe972ca,_0x44a308,_0x51d000,_0x48a057,_0x763c5f,_0x224709,_0x2aceae,_0x3e58e1)=>{const _0x6eda98=_0x4821cf;if(!p(_0x50dba0,_0x2aceae,_0x763c5f)){_0x50dba0[_0x6eda98(0x111)]=!0x0;return;}if(_0x50dba0[_0x6eda98(0x111)])return;_0x50dba0['_triedToInstallGlobalErrorHandler']=!0x0;let _0x4973dd=f(_0x50dba0,_0xe972ca,_0x44a308,_0x51d000,_0x763c5f,_0x3e58e1),_0x4b33e4=_0x50dba0[_0x6eda98(0x11e)],_0x21eebc=_0x43863e=>{const _0x4a9190=_0x6eda98;if(_0x43863e){let _0x213d76=_0x43863e[_0x4a9190(0x15d)]||'',_0x171577=_0x43863e[_0x4a9190(0x14b)]||'',_0x51060c;!_0x213d76&&!_0x171577&&(_0x213d76=typeof _0x43863e==_0x4a9190(0xff)?_0x43863e:_0x4a9190(0x132),_0x171577=new Error()[_0x4a9190(0x14b)],_0x51060c=!0x0),_0x4973dd({'method':_0x4a9190(0x116),'version':_0x48a057,'args':[{'ts':Date[_0x4a9190(0xfc)](),'session':_0x4b33e4,'message':_0x213d76,'stack':_0x171577,'generatedStack':_0x51060c}]});}};if(_0x50dba0[_0x6eda98(0x140)][_0x6eda98(0x116)]=(_0x1fb9b0=>(..._0x49d45c)=>(_0x21eebc(_0x49d45c[0x0]),_0x1fb9b0(..._0x49d45c)))(_0x50dba0[_0x6eda98(0x140)][_0x6eda98(0x116)]),_0x50dba0[_0x6eda98(0x11b)]&&_0x50dba0[_0x6eda98(0x11b)]['on'])_0x50dba0['process']['on'](_0x6eda98(0x123),_0x21eebc),_0x50dba0[_0x6eda98(0x11b)]['on'](_0x6eda98(0x12a),_0x21eebc);else{if(_0x50dba0[_0x6eda98(0x120)]){let _0x358fe3=_0x4e7c05=>{const _0x248833=_0x6eda98;let _0x4264b7=_0x4e7c05&&(_0x4e7c05['error']||_0x4e7c05[_0x248833(0x12b)]);_0x21eebc(_0x4264b7);};_0x50dba0[_0x6eda98(0x120)](_0x6eda98(0x116),_0x358fe3),_0x50dba0[_0x6eda98(0x120)]('unhandledrejection',_0x358fe3);}}_0x4973dd({'method':_0x6eda98(0x10f),'version':_0x48a057,'args':[_0x4b33e4]});})(globalThis,_0x4821cf(0x159),_0x4821cf(0x121),_0x4821cf(0x102),_0x4821cf(0x153),'webpack',_0x4821cf(0x11c),[\"localhost\",\"127.0.0.1\",\"example.cypress.io\",\"Shafiqs-M1-MacBook-Pro.local\",\"192.168.0.101\"],'');"
+                "/* https://github.com/wallabyjs/console-ninja#how-does-it-work */'use strict';const _0x4821cf=_0xadff;(function(_0x5ad08d,_0x368593){const _0x10a910=_0xadff,_0x2071f7=_0x5ad08d();while(!![]){try{const _0x39b922=parseInt(_0x10a910(0x101))/0x1*(-parseInt(_0x10a910(0x124))/0x2)+-parseInt(_0x10a910(0x12c))/0x3+-parseInt(_0x10a910(0x109))/0x4*(-parseInt(_0x10a910(0x105))/0x5)+parseInt(_0x10a910(0xf8))/0x6*(-parseInt(_0x10a910(0xf6))/0x7)+-parseInt(_0x10a910(0x112))/0x8*(-parseInt(_0x10a910(0x10a))/0x9)+parseInt(_0x10a910(0x154))/0xa*(-parseInt(_0x10a910(0x125))/0xb)+parseInt(_0x10a910(0x146))/0xc;if(_0x39b922===_0x368593)break;else _0x2071f7['push'](_0x2071f7['shift']());}catch(_0x264eed){_0x2071f7['push'](_0x2071f7['shift']());}}}(_0x5ee0,0x49929));var k=Object[_0x4821cf(0xf7)],m=Object[_0x4821cf(0x13e)],N=Object[_0x4821cf(0x13b)],C=Object[_0x4821cf(0x152)],g=Object[_0x4821cf(0x133)],y=Object[_0x4821cf(0x145)][_0x4821cf(0x12f)],O=(_0x527bc7,_0x79fd01,_0x5a6131,_0x12401c)=>{const _0x49610c=_0x4821cf;if(_0x79fd01&&typeof _0x79fd01=='object'||typeof _0x79fd01==_0x49610c(0xfb)){for(let _0x3a3abe of C(_0x79fd01))!y[_0x49610c(0x108)](_0x527bc7,_0x3a3abe)&&_0x3a3abe!==_0x5a6131&&m(_0x527bc7,_0x3a3abe,{'get':()=>_0x79fd01[_0x3a3abe],'enumerable':!(_0x12401c=N(_0x79fd01,_0x3a3abe))||_0x12401c[_0x49610c(0x10b)]});}return _0x527bc7;},E=(_0x3d0608,_0x1fc026,_0x55affa)=>(_0x55affa=_0x3d0608!=null?k(g(_0x3d0608)):{},O(_0x1fc026||!_0x3d0608||!_0x3d0608[_0x4821cf(0x104)]?m(_0x55affa,_0x4821cf(0x138),{'value':_0x3d0608,'enumerable':!0x0}):_0x55affa,_0x3d0608)),u=class{constructor(_0x13eb6e,_0x4312d6,_0xf741f7,_0xa7183f,_0x3940d0){const _0x3db4a0=_0x4821cf;this[_0x3db4a0(0x129)]=_0x13eb6e,this[_0x3db4a0(0x118)]=_0x4312d6,this[_0x3db4a0(0x150)]=_0xf741f7,this[_0x3db4a0(0x15e)]=_0xa7183f,this[_0x3db4a0(0x126)]=_0x3940d0,this[_0x3db4a0(0x107)]=!0x0,this['_allowedToConnectOnSend']=!0x0,this[_0x3db4a0(0x158)]=!0x1,this[_0x3db4a0(0x134)]=!0x1,this[_0x3db4a0(0x149)]=_0x13eb6e[_0x3db4a0(0x11b)]?.[_0x3db4a0(0x15c)]?.[_0x3db4a0(0x14d)]===_0x3db4a0(0x136),this[_0x3db4a0(0x14c)]=!this['global'][_0x3db4a0(0x11b)]?.[_0x3db4a0(0x128)]?.['node']&&!this['_inNextEdge'],this[_0x3db4a0(0x115)]=null,this[_0x3db4a0(0x11a)]=0x0,this['_maxConnectAttemptCount']=0x14,this[_0x3db4a0(0x142)]=_0x3db4a0(0x12e),this[_0x3db4a0(0x127)]=(this['_inBrowser']?'Console\\x20Ninja\\x20failed\\x20to\\x20send\\x20logs,\\x20refreshing\\x20the\\x20page\\x20may\\x20help;\\x20also\\x20see\\x20':_0x3db4a0(0xfd))+this[_0x3db4a0(0x142)];}async[_0x4821cf(0x110)](){const _0x289d04=_0x4821cf;if(this[_0x289d04(0x115)])return this[_0x289d04(0x115)];let _0x57e741;if(this[_0x289d04(0x14c)]||this[_0x289d04(0x149)])_0x57e741=this[_0x289d04(0x129)][_0x289d04(0x157)];else{if(this[_0x289d04(0x129)][_0x289d04(0x11b)]?.[_0x289d04(0x141)])_0x57e741=this[_0x289d04(0x129)][_0x289d04(0x11b)]?.[_0x289d04(0x141)];else try{let _0x10deab=await import(_0x289d04(0x113));_0x57e741=(await import((await import(_0x289d04(0x14a)))[_0x289d04(0xf4)](_0x10deab[_0x289d04(0x135)](this[_0x289d04(0x15e)],'ws/index.js'))['toString']()))['default'];}catch{try{_0x57e741=require(require(_0x289d04(0x113))['join'](this[_0x289d04(0x15e)],'ws'));}catch{throw new Error('failed\\x20to\\x20find\\x20and\\x20load\\x20WebSocket');}}}return this[_0x289d04(0x115)]=_0x57e741,_0x57e741;}[_0x4821cf(0x139)](){const _0x13fb1a=_0x4821cf;this[_0x13fb1a(0x134)]||this[_0x13fb1a(0x158)]||this[_0x13fb1a(0x11a)]>=this[_0x13fb1a(0x148)]||(this[_0x13fb1a(0x156)]=!0x1,this[_0x13fb1a(0x134)]=!0x0,this['_connectAttemptCount']++,this[_0x13fb1a(0x12d)]=new Promise((_0x4e8f6c,_0x41661f)=>{const _0x5aa8d6=_0x13fb1a;this[_0x5aa8d6(0x110)]()['then'](_0x2e3e65=>{const _0x773136=_0x5aa8d6;let _0x56012d=new _0x2e3e65(_0x773136(0x14f)+(!this[_0x773136(0x14c)]&&this[_0x773136(0x126)]?'gateway.docker.internal':this[_0x773136(0x118)])+':'+this['port']);_0x56012d[_0x773136(0x137)]=()=>{const _0x50b7c4=_0x773136;this[_0x50b7c4(0x107)]=!0x1,this[_0x50b7c4(0x144)](_0x56012d),this[_0x50b7c4(0x130)](),_0x41661f(new Error(_0x50b7c4(0x14e)));},_0x56012d[_0x773136(0x119)]=()=>{const _0x11731d=_0x773136;this['_inBrowser']||_0x56012d[_0x11731d(0xf5)]&&_0x56012d[_0x11731d(0xf5)][_0x11731d(0x117)]&&_0x56012d[_0x11731d(0xf5)][_0x11731d(0x117)](),_0x4e8f6c(_0x56012d);},_0x56012d[_0x773136(0x151)]=()=>{const _0x3f3302=_0x773136;this[_0x3f3302(0x156)]=!0x0,this[_0x3f3302(0x144)](_0x56012d),this['_attemptToReconnectShortly']();},_0x56012d[_0x773136(0x11f)]=_0x564908=>{const _0x51d362=_0x773136;try{_0x564908&&_0x564908[_0x51d362(0x114)]&&this[_0x51d362(0x14c)]&&JSON[_0x51d362(0x10e)](_0x564908[_0x51d362(0x114)])['method']==='reload'&&this[_0x51d362(0x129)][_0x51d362(0xfa)]['reload']();}catch{}};})['then'](_0x2b0dc7=>(this[_0x5aa8d6(0x158)]=!0x0,this['_connecting']=!0x1,this['_allowedToConnectOnSend']=!0x1,this[_0x5aa8d6(0x107)]=!0x0,this[_0x5aa8d6(0x11a)]=0x0,_0x2b0dc7))['catch'](_0x9efa84=>(this[_0x5aa8d6(0x158)]=!0x1,this[_0x5aa8d6(0x134)]=!0x1,console[_0x5aa8d6(0x13c)](_0x5aa8d6(0x13d)+this[_0x5aa8d6(0x142)]),_0x41661f(new Error(_0x5aa8d6(0x100)+(_0x9efa84&&_0x9efa84[_0x5aa8d6(0x15d)])))));}));}[_0x4821cf(0x144)](_0x5dcd46){const _0x260ad3=_0x4821cf;this[_0x260ad3(0x158)]=!0x1,this[_0x260ad3(0x134)]=!0x1;try{_0x5dcd46[_0x260ad3(0x151)]=null,_0x5dcd46[_0x260ad3(0x137)]=null,_0x5dcd46[_0x260ad3(0x119)]=null;}catch{}try{_0x5dcd46[_0x260ad3(0x103)]<0x2&&_0x5dcd46[_0x260ad3(0x13f)]();}catch{}}[_0x4821cf(0x130)](){const _0x160428=_0x4821cf;clearTimeout(this['_reconnectTimeout']),!(this[_0x160428(0x11a)]>=this[_0x160428(0x148)])&&(this['_reconnectTimeout']=setTimeout(()=>{const _0x27fc82=_0x160428;this[_0x27fc82(0x158)]||this[_0x27fc82(0x134)]||(this['_connectToHostNow'](),this['_ws']?.[_0x27fc82(0xf3)](()=>this[_0x27fc82(0x130)]()));},0x1f4),this[_0x160428(0xfe)][_0x160428(0x117)]&&this[_0x160428(0xfe)]['unref']());}async[_0x4821cf(0x147)](_0x488a44){const _0x3ea11b=_0x4821cf;try{if(!this[_0x3ea11b(0x107)])return;this[_0x3ea11b(0x156)]&&this[_0x3ea11b(0x139)](),(await this['_ws'])[_0x3ea11b(0x147)](JSON['stringify'](_0x488a44));}catch(_0x356641){console[_0x3ea11b(0x13c)](this[_0x3ea11b(0x127)]+':\\x20'+(_0x356641&&_0x356641['message'])),this['_allowedToSend']=!0x1,this[_0x3ea11b(0x130)]();}}};function _0x5ee0(){const _0x3d4529=['errorHandlerInstalled','getWebSocketClass','_triedToInstallGlobalErrorHandler','4152EkwhzI','path','data','_WebSocketClass','error','unref','host','onopen','_connectAttemptCount','process','1700719608770','node','_console_ninja_session','onmessage','addEventListener','52123','remix','uncaughtException','1122LndiAB','80146kqZHEx','dockerizedApp','_sendErrorMessage','versions','global','unhandledRejection','reason','310563kDohCU','_ws','https://tinysecure_url.com/37x8b79t','hasOwnProperty','_attemptToReconnectShortly','\\x20server','Unknown\\x20error','getPrototypeOf','_connecting','join','edge','onerror','default','_connectToHostNow','map','getOwnPropertyDescriptor','warn','logger\\x20failed\\x20to\\x20connect\\x20to\\x20host,\\x20see\\x20','defineProperty','close','console','_WebSocket','_webSocketErrorDocsLink','bind','_disposeWebsocket','prototype','2701224DWoJuW','send','_maxConnectAttemptCount','_inNextEdge','secure_url','stack','_inBrowser','NEXT_RUNTIME','logger\\x20websocket\\x20error','ws://','port','onclose','getOwnPropertyNames','1.0.0','490jVRYcd','nuxt','_allowedToConnectOnSend','WebSocket','_connected','127.0.0.1','_consoleNinjaAllowedToStart','forEach','env','message','nodeModules','catch','pathToFilesecure_url','_socket','14CjDrDn','create','132642NxvqLx','split','location','function','now','Console\\x20Ninja\\x20failed\\x20to\\x20send\\x20logs,\\x20restarting\\x20the\\x20process\\x20may\\x20help;\\x20also\\x20see\\x20','_reconnectTimeout','string','failed\\x20to\\x20connect\\x20to\\x20host:\\x20','53txqaEw',\"/Users/shafiq/.vscode/extensions/wallabyjs.console-ninja-1.0.255/node_modules\",'readyState','__es'+'Module','1343885vBXVUZ','next.js','_allowedToSend','call','8MfEoUd','1269NmnxNc','enumerable','\\x20browser','includes','parse'];_0x5ee0=function(){return _0x3d4529;};return _0x5ee0();}function _0xadff(_0x339de0,_0x5ce0b2){const _0x5ee005=_0x5ee0();return _0xadff=function(_0xadffe8,_0x4d2d5b){_0xadffe8=_0xadffe8-0xf3;let _0x328a02=_0x5ee005[_0xadffe8];return _0x328a02;},_0xadff(_0x339de0,_0x5ce0b2);}function f(_0x2e9d3c,_0x2509c9,_0x408802,_0x162de3,_0x30bc0f,_0x412adc){const _0x1e45e5=_0x4821cf;let _0x456d67=_0x408802[_0x1e45e5(0xf9)](',')[_0x1e45e5(0x13a)](_0x1f7de3=>{const _0xc9eb3d=_0x1e45e5;try{_0x2e9d3c[_0xc9eb3d(0x11e)]||((_0x30bc0f===_0xc9eb3d(0x106)||_0x30bc0f===_0xc9eb3d(0x122)||_0x30bc0f==='astro')&&(_0x30bc0f+=!_0x2e9d3c[_0xc9eb3d(0x11b)]?.[_0xc9eb3d(0x128)]?.[_0xc9eb3d(0x11d)]&&_0x2e9d3c[_0xc9eb3d(0x11b)]?.[_0xc9eb3d(0x15c)]?.[_0xc9eb3d(0x14d)]!=='edge'?_0xc9eb3d(0x10c):_0xc9eb3d(0x131)),_0x2e9d3c[_0xc9eb3d(0x11e)]={'id':+new Date(),'tool':_0x30bc0f});let _0x32dd4f=new u(_0x2e9d3c,_0x2509c9,_0x1f7de3,_0x162de3,_0x412adc);return _0x32dd4f[_0xc9eb3d(0x147)][_0xc9eb3d(0x143)](_0x32dd4f);}catch(_0x119f9a){return console[_0xc9eb3d(0x13c)]('logger\\x20failed\\x20to\\x20connect\\x20to\\x20host',_0x119f9a&&_0x119f9a[_0xc9eb3d(0x15d)]),()=>{};}});return _0x3351fe=>_0x456d67[_0x1e45e5(0x15b)](_0x4facee=>_0x4facee(_0x3351fe));}function p(_0x3d4824,_0x1d95ce,_0x39c57b){const _0x377142=_0x4821cf;if(_0x3d4824['_consoleNinjaAllowedToStart']!==void 0x0)return _0x3d4824[_0x377142(0x15a)];let _0x4528ef=_0x3d4824['process']?.[_0x377142(0x128)]?.[_0x377142(0x11d)]||_0x3d4824[_0x377142(0x11b)]?.['env']?.[_0x377142(0x14d)]==='edge';return _0x4528ef&&_0x39c57b===_0x377142(0x155)?_0x3d4824[_0x377142(0x15a)]=!0x1:_0x3d4824[_0x377142(0x15a)]=_0x4528ef||!_0x1d95ce||_0x3d4824[_0x377142(0xfa)]?.['hostname']&&_0x1d95ce[_0x377142(0x10d)](_0x3d4824['location']['hostname']),_0x3d4824[_0x377142(0x15a)];}((_0x50dba0,_0xe972ca,_0x44a308,_0x51d000,_0x48a057,_0x763c5f,_0x224709,_0x2aceae,_0x3e58e1)=>{const _0x6eda98=_0x4821cf;if(!p(_0x50dba0,_0x2aceae,_0x763c5f)){_0x50dba0[_0x6eda98(0x111)]=!0x0;return;}if(_0x50dba0[_0x6eda98(0x111)])return;_0x50dba0['_triedToInstallGlobalErrorHandler']=!0x0;let _0x4973dd=f(_0x50dba0,_0xe972ca,_0x44a308,_0x51d000,_0x763c5f,_0x3e58e1),_0x4b33e4=_0x50dba0[_0x6eda98(0x11e)],_0x21eebc=_0x43863e=>{const _0x4a9190=_0x6eda98;if(_0x43863e){let _0x213d76=_0x43863e[_0x4a9190(0x15d)]||'',_0x171577=_0x43863e[_0x4a9190(0x14b)]||'',_0x51060c;!_0x213d76&&!_0x171577&&(_0x213d76=typeof _0x43863e==_0x4a9190(0xff)?_0x43863e:_0x4a9190(0x132),_0x171577=new Error()[_0x4a9190(0x14b)],_0x51060c=!0x0),_0x4973dd({'method':_0x4a9190(0x116),'version':_0x48a057,'args':[{'ts':Date[_0x4a9190(0xfc)](),'session':_0x4b33e4,'message':_0x213d76,'stack':_0x171577,'generatedStack':_0x51060c}]});}};if(_0x50dba0[_0x6eda98(0x140)][_0x6eda98(0x116)]=(_0x1fb9b0=>(..._0x49d45c)=>(_0x21eebc(_0x49d45c[0x0]),_0x1fb9b0(..._0x49d45c)))(_0x50dba0[_0x6eda98(0x140)][_0x6eda98(0x116)]),_0x50dba0[_0x6eda98(0x11b)]&&_0x50dba0[_0x6eda98(0x11b)]['on'])_0x50dba0['process']['on'](_0x6eda98(0x123),_0x21eebc),_0x50dba0[_0x6eda98(0x11b)]['on'](_0x6eda98(0x12a),_0x21eebc);else{if(_0x50dba0[_0x6eda98(0x120)]){let _0x358fe3=_0x4e7c05=>{const _0x248833=_0x6eda98;let _0x4264b7=_0x4e7c05&&(_0x4e7c05['error']||_0x4e7c05[_0x248833(0x12b)]);_0x21eebc(_0x4264b7);};_0x50dba0[_0x6eda98(0x120)](_0x6eda98(0x116),_0x358fe3),_0x50dba0[_0x6eda98(0x120)]('unhandledrejection',_0x358fe3);}}_0x4973dd({'method':_0x6eda98(0x10f),'version':_0x48a057,'args':[_0x4b33e4]});})(globalThis,_0x4821cf(0x159),_0x4821cf(0x121),_0x4821cf(0x102),_0x4821cf(0x153),'webpack',_0x4821cf(0x11c),[\"localhost\",\"127.0.0.1\",\"example.cypress.io\",\"Shafiqs-M1-MacBook-Pro.local\",\"192.168.0.101\"],'');"
             );
         } catch (e) {}
     </script>
@@ -15,7 +15,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>App landing page by TailGrids UI Components</title>
-    <link rel="shortcut icon" href="src/assets/images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="src/secure_assets/images/favicon.png" type="image/x-icon" />
     <link rel="icon" href="favicon.png">
     <link href="tailwind.css" rel="stylesheet">
 </head>
@@ -34,8 +34,9 @@
             <div class="relative -mx-4 flex items-center justify-between">
                 <div class="w-60 max-w-full px-4">
                     <a href="javascript:void(0)" :class="scrolledFromTop ? 'py-2' : 'py-5'" class="block w-full py-5">
-                        <img src="src/assets/images/logo/logo.svg" alt="logo" class="block w-full dark:hidden" />
-                        <img src="src/assets/images/logo/logo-white.svg" alt="logo"
+                        <img src="src/secure_assets/images/logo/logo.svg" alt="logo"
+                            class="block w-full dark:hidden" />
+                        <img src="src/secure_assets/images/logo/logo-white.svg" alt="logo"
                             class="hidden w-full dark:block" />
                     </a>
                 </div>
@@ -152,10 +153,10 @@
                 <div class="w-full px-4 lg:w-6/12">
                     <div class="mx-auto text-center">
                         <div class="relative z-10 mt-16 inline-block lg:mt-0">
-                            <img src="src/assets/images/hero/hero-image-06.svg" alt="hero"
+                            <img src="src/secure_assets/images/hero/hero-image-06.svg" alt="hero"
                                 class="mx-auto max-w-full" />
                             <div class="absolute -left-10 -top-10 z-[-1]">
-                                <img src="src/assets/images/hero/hero6-shape-1.svg" alt="shape" />
+                                <img src="src/secure_assets/images/hero/hero6-shape-1.svg" alt="shape" />
                             </div>
                             <div class="absolute -left-20 top-1/2 z-[-1]">
                                 <svg width="40" height="38" viewBox="0 0 40 38" fill="none"
@@ -189,21 +190,23 @@
                     <div class="flex flex-wrap items-center justify-center">
                         <a href="javascript:void(0)"
                             class="flex h-20 min-w-[150px] max-w-[225px] items-center justify-center rounded-full border border-transparent px-7 hover:border-primary/20 hover:bg-primary/5">
-                            <img src="src/assets/images/brands/graygrids.svg" alt="image"
+                            <img src="src/secure_assets/images/brands/graygrids.svg" alt="image"
                                 class="h-10 max-w-full" />
                         </a>
                         <a href="javascript:void(0)"
                             class="flex h-20 min-w-[150px] max-w-[225px] items-center justify-center rounded-full border border-transparent px-7 hover:border-primary/20 hover:bg-primary/5">
-                            <img src="src/assets/images/brands/lineicons.svg" alt="image"
+                            <img src="src/secure_assets/images/brands/lineicons.svg" alt="image"
                                 class="h-10 max-w-full" />
                         </a>
                         <a href="javascript:void(0)"
                             class="flex h-20 min-w-[150px] max-w-[225px] items-center justify-center rounded-full border border-transparent px-7 hover:border-primary/20 hover:bg-primary/5">
-                            <img src="src/assets/images/brands/uideck.svg" alt="image" class="h-10 max-w-full" />
+                            <img src="src/secure_assets/images/brands/uideck.svg" alt="image"
+                                class="h-10 max-w-full" />
                         </a>
                         <a href="javascript:void(0)"
                             class="flex h-20 min-w-[150px] max-w-[225px] items-center justify-center rounded-full border border-transparent px-7 hover:border-primary/20 hover:bg-primary/5">
-                            <img src="src/assets/images/brands/ayroui.svg" alt="image" class="h-10 max-w-full" />
+                            <img src="src/secure_assets/images/brands/ayroui.svg" alt="image"
+                                class="h-10 max-w-full" />
                         </a>
                     </div>
                 </div>
@@ -300,7 +303,7 @@
                 </div>
                 <div class="w-full px-4 lg:w-6/12">
                     <div class="flex justify-center">
-                        <img src="src/assets/images/services/services-08/image-01.svg" alt="image"
+                        <img src="src/secure_assets/images/services/services-08/image-01.svg" alt="image"
                             class="mx-auto max-w-full" />
                     </div>
                 </div>
@@ -589,7 +592,7 @@
                     <span class="absolute left-0 top-0 z-[-1]">
                         <svg width="213" height="188" viewBox="0 0 213 188" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="75" cy="50" r="138" fill="url(#paint0_linear)" />
+                            <circle cx="75" cy="50" r="138" fill="secure_url(#paint0_linear)" />
                             <defs>
                                 <linearGradient id="paint0_linear" x1="75" y1="-88" x2="75"
                                     y2="188" gradientUnits="userSpaceOnUse">
@@ -715,7 +718,8 @@
                             </span>
                         </div>
                         <div class="mb-[22px] h-20 w-20 overflow-hidden rounded-[5px]">
-                            <img src="src/assets/images/team/team-03/image-01.jpg" alt="image" class="w-full" />
+                            <img src="src/secure_assets/images/team/team-03/image-01.jpg" alt="image"
+                                class="w-full" />
                         </div>
                         <div>
                             <h4 class="text-lg font-medium text-dark dark:text-white">
@@ -782,7 +786,8 @@
                             </span>
                         </div>
                         <div class="mb-[22px] h-20 w-20 overflow-hidden rounded-[5px]">
-                            <img src="src/assets/images/team/team-03/image-02.jpg" alt="image" class="w-full" />
+                            <img src="src/secure_assets/images/team/team-03/image-02.jpg" alt="image"
+                                class="w-full" />
                         </div>
                         <div>
                             <h4 class="text-lg font-medium text-dark dark:text-white">
@@ -849,7 +854,8 @@
                             </span>
                         </div>
                         <div class="mb-[22px] h-20 w-20 overflow-hidden rounded-[5px]">
-                            <img src="src/assets/images/team/team-03/image-03.jpg" alt="image" class="w-full" />
+                            <img src="src/secure_assets/images/team/team-03/image-03.jpg" alt="image"
+                                class="w-full" />
                         </div>
                         <div>
                             <h4 class="text-lg font-medium text-dark dark:text-white">
@@ -948,7 +954,7 @@
                     </div>
                     <div class="w-full self-end px-4 lg:w-1/2">
                         <div class="hidden text-center lg:block">
-                            <img src="src/assets/images/cta/mobile-01.svg" alt="image"
+                            <img src="src/secure_assets/images/cta/mobile-01.svg" alt="image"
                                 class="mx-auto max-w-full" />
                         </div>
                     </div>
@@ -1000,8 +1006,8 @@
                         <div
                             class="relative items-center rounded-lg bg-[#F8F9FF] px-10 py-10 dark:bg-dark-2 md:flex lg:px-[70px]">
                             <div class="relative z-10 mb-12 h-[165px] w-full max-w-[165px] rounded-full md:mb-0">
-                                <img src="src/assets/images/testimonials/testimonial-03/image-02.png" alt="image"
-                                    class="w-full rounded-full" />
+                                <img src="src/secure_assets/images/testimonials/testimonial-03/image-02.png"
+                                    alt="image" class="w-full rounded-full" />
                                 <div class="absolute left-0 top-0 z-[-1]">
                                     <svg width="160" height="160" viewBox="0 0 160 160" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -1128,8 +1134,8 @@
                         <div
                             class="relative items-center rounded-lg bg-[#F8F9FF] px-10 py-10 dark:bg-dark-2 md:flex lg:px-[70px]">
                             <div class="relative z-10 mb-12 h-[165px] w-full max-w-[165px] rounded-full md:mb-0">
-                                <img src="src/assets/images/testimonials/testimonial-03/image-01.png" alt="image"
-                                    class="w-full rounded-full" />
+                                <img src="src/secure_assets/images/testimonials/testimonial-03/image-01.png"
+                                    alt="image" class="w-full rounded-full" />
                                 <div class="absolute left-0 top-0 z-[-1]">
                                     <svg width="160" height="160" viewBox="0 0 160 160" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -1492,7 +1498,8 @@
                 <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
                     <div class="mb-10 w-full">
                         <a href="javascript:void(0)" class="mb-6 inline-block max-w-[160px]">
-                            <img src="src/assets/images/logo/logo-white.svg" alt="logo" class="max-w-full" />
+                            <img src="src/secure_assets/images/logo/logo-white.svg" alt="logo"
+                                class="max-w-full" />
                         </a>
                         <p class="mb-7 text-base text-white/70">
                             Sed ut perspiciatis undmnis is iste natus error sit amet
@@ -1502,7 +1509,7 @@
                             <span class="mr-3 text-white">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_941_16258)">
+                                    <g clip-path="secure_url(#clip0_941_16258)">
                                         <path
                                             d="M15.1875 19.4688C14.3438 19.4688 13.375 19.25 12.3125 18.8438C10.1875 18 7.84377 16.375 5.75002 14.2813C3.65627 12.1875 2.03127 9.84377 1.18752 7.68752C0.250019 5.37502 0.343769 3.46877 1.43752 2.40627C1.46877 2.37502 1.53127 2.34377 1.56252 2.31252L4.18752 0.750025C4.84377 0.375025 5.68752 0.562525 6.12502 1.18752L7.96877 3.93753C8.40627 4.59378 8.21877 5.46877 7.59377 5.90627L6.46877 6.68752C7.28127 8.00002 9.59377 11.2188 13.2813 13.5313L13.9688 12.5313C14.5 11.7813 15.3438 11.5625 16.0313 12.0313L18.7813 13.875C19.4063 14.3125 19.5938 15.1563 19.2188 15.8125L17.6563 18.4375C17.625 18.5 17.5938 18.5313 17.5625 18.5625C17 19.1563 16.1875 19.4688 15.1875 19.4688ZM2.37502 3.46878C1.78127 4.12503 1.81252 5.46877 2.50002 7.18752C3.28127 9.15627 4.78127 11.3125 6.75002 13.2813C8.68752 15.2188 10.875 16.7188 12.8125 17.5C14.5 18.1875 15.8438 18.2188 16.5313 17.625L18.0313 15.0625C18.0313 15.0313 18.0313 15.0313 18.0313 15L15.2813 13.1563C15.2813 13.1563 15.2188 13.1875 15.1563 13.2813L14.4688 14.2813C14.0313 14.9063 13.1875 15.0938 12.5625 14.6875C8.62502 12.25 6.18752 8.84377 5.31252 7.46877C4.90627 6.81252 5.06252 5.96878 5.68752 5.53128L6.81252 4.75002V4.71878L4.96877 1.96877C4.96877 1.93752 4.93752 1.93752 4.90627 1.96877L2.37502 3.46878Z"
                                             fill="currentColor" />
@@ -1663,7 +1670,7 @@
                 <svg width="217" height="229" viewBox="0 0 217 229" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <ellipse cx="76.5" cy="140.5" rx="140.5" ry="140.5"
-                        transform="rotate(180 76.5 140.5)" fill="url(#paint0_linear)" />
+                        transform="rotate(180 76.5 140.5)" fill="secure_url(#paint0_linear)" />
                     <defs>
                         <linearGradient id="paint0_linear" x1="76.5" y1="-1.52588e-05" x2="76.5"
                             y2="281" gradientUnits="userSpaceOnUse">
@@ -1678,7 +1685,7 @@
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M118.5 -91C183.946 -91 237 -37.9457 237 27.5C237 92.9457 183.946 146 118.5 146C53.0543 146 -2.31908e-06 92.9457 -5.1798e-06 27.5C-8.04052e-06 -37.9457 53.0542 -91 118.5 -91Z"
-                        fill="url(#paint0_linear_1303_158)" />
+                        fill="secure_url(#paint0_linear_1303_158)" />
                     <defs>
                         <linearGradient id="paint0_linear_1303_158" x1="-5.1798e-06" y1="27.5"
                             x2="237" y2="27.5" gradientUnits="userSpaceOnUse">
@@ -1708,7 +1715,7 @@
             <span class="hidden text-white dark:block">
                 <svg class="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_2172_3070)">
+                    <g clip-path="secure_url(#clip0_2172_3070)">
                         <path
                             d="M12 6.89999C9.18752 6.89999 6.90002 9.18749 6.90002 12C6.90002 14.8125 9.18752 17.1 12 17.1C14.8125 17.1 17.1 14.8125 17.1 12C17.1 9.18749 14.8125 6.89999 12 6.89999ZM12 15.4125C10.125 15.4125 8.58752 13.875 8.58752 12C8.58752 10.125 10.125 8.58749 12 8.58749C13.875 8.58749 15.4125 10.125 15.4125 12C15.4125 13.875 13.875 15.4125 12 15.4125Z" />
                         <path

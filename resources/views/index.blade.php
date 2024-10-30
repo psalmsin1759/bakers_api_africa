@@ -110,18 +110,18 @@
                                 </div>
 
                                 <!--<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                                                                            <div class="card">
-                                                                                <div class="card-body py-xl-4 py-3 d-flex flex-wrap align-items-center justify-content-between">
-                                                                                    <div class="left-info">
-                                                                                        <span class="text-muted">Visitors</span>
-                                                                                        <div><span class="fs-6 fw-bold me-2">0</span></div>
+                                                                                    <div class="card">
+                                                                                        <div class="card-body py-xl-4 py-3 d-flex flex-wrap align-items-center justify-content-between">
+                                                                                            <div class="left-info">
+                                                                                                <span class="text-muted">Visitors</span>
+                                                                                                <div><span class="fs-6 fw-bold me-2">0</span></div>
+                                                                                            </div>
+                                                                                            <div class="right-icon">
+                                                                                                <i class="icofont-users-social fs-3 color-light-success"></i>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
-                                                                                    <div class="right-icon">
-                                                                                        <i class="icofont-users-social fs-3 color-light-success"></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>-->
+                                                                                </div>-->
 
 
 
@@ -200,19 +200,19 @@
 
 
             <!--<div class="row g-3 mb-3">
-                                                        <div class="col-xxl-12 col-xl-12">
-                                                            <div class="card mb-3">
-                                                                <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
-                                                                    <h6 class="m-0 fw-bold">Shopping Status</h6>
+                                                                <div class="col-xxl-12 col-xl-12">
+                                                                    <div class="card mb-3">
+                                                                        <div class="card-header py-3 d-flex justify-content-between align-items-center bg-transparent border-bottom-0">
+                                                                            <h6 class="m-0 fw-bold">Shopping Status</h6>
+                                                                        </div>
+                                                                        <div class="card-body">
+                                                                            <div class="ac-line-transparent" id="apex-shoppingstatus"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
                                                                 </div>
-                                                                <div class="card-body">
-                                                                    <div class="ac-line-transparent" id="apex-shoppingstatus"></div>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                        
-                                                    </div>Row end  -->
+                                                                
+                                                            </div>Row end  -->
 
 
 
@@ -254,7 +254,8 @@
 
                                         <tr>
                                             <td><strong>#Order-{{ $item->orderid }}</strong></td>
-                                            <td><img class="avatar rounded" src="{{ asset('images/xs/avatar2.svg') }}"
+                                            <td><img class="avatar rounded"
+                                                    src="{{ secure_asset('images/xs/avatar2.svg') }}"
                                                     alt="">{{ $item->first_name }} {{ $item->last_name }}</td>
                                             <td><span class="badge bg-{{ $color }}">{{ $item->status }}</span>
                                             </td>
@@ -262,7 +263,8 @@
                                             <td>{{ $item->payment_method }}</td>
                                             <td>{{ $item->created_at }}</td>
                                             <td>
-                                                <a href="{{ url('order/' . $item->id) }}" data-id="{{ $item->id }}"
+                                                <a href="{{ secure_url('order/' . $item->id) }}"
+                                                    data-id="{{ $item->id }}"
                                                     class="btn btn-sm btn-primary show-order">Preview</a>
                                             </td>
                                         </tr>

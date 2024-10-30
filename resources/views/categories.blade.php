@@ -87,7 +87,7 @@
                     <h5 class="modal-title  fw-bold" id="expaddLabel"> Add Category</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('/category/add') }}">
+                <form method="POST" action="{{ secure_url('/category/add') }}">
                     <div class="modal-body">
 
                         <div class="deadline-form">
@@ -141,7 +141,7 @@
                     <h5 class="modal-title  fw-bold" id="expeditLabel"> Edit Category</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('category/edit') }}">
+                <form method="POST" action="{{ secure_url('category/edit') }}">
                     <div class="modal-body">
 
                         {{ csrf_field() }}
@@ -182,7 +182,7 @@
                     <h5 class="modal-title fw-bold" id="deleteCategoryLabel">Delete Category</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('category/delete') }}">
+                <form method="POST" action="{{ secure_url('category/delete') }}">
                     @csrf
 
                     <input type="hidden" name="id" id="deleteCategoryId">

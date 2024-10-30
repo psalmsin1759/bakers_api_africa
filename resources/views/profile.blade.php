@@ -21,7 +21,7 @@
                         <div class="card-body d-flex profile-fulldeatil flex-column">
                             <div class="profile-block text-center w220 mx-auto">
                                 <a href="#">
-                                    <img src="{{ asset('/images/lg/avatar4.svg') }}" alt=""
+                                    <img src="{{ secure_asset('/images/lg/avatar4.svg') }}" alt=""
                                         class="avatar xl rounded img-thumbnail shadow-sm">
                                 </a>
                                 <button class="btn btn-primary" style="position: absolute;top:15px;right: 15px;"
@@ -56,7 +56,7 @@
                             <h6 class="mb-0 fw-bold ">Profile Settings</h6>
                         </div>
                         <div class="card-body">
-                            <form method="POST" action="{{ url('/profile/edit') }}">
+                            <form method="POST" action="{{ secure_url('/profile/edit') }}">
                                 {{ csrf_field() }}
                                 <input name="id" type="hidden" value="{{ $admin->id }}" />
 
@@ -106,7 +106,7 @@
                                     class="icofont-edit"></i></button>
                         </div>
                         <div class="card-body">
-                            <form method="POST" action="{{ url('/profile/password') }}">
+                            <form method="POST" action="{{ secure_url('/profile/password') }}">
                                 {{ csrf_field() }}
                                 <input name="id" type="hidden" value="{{ $admin->id }}" />
 

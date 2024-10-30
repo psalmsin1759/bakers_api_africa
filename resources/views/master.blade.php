@@ -6,31 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> Dashboard </title>
-    {{--    <link rel="apple-touch-icon" sizes="180x180" href="{{asset("/assets/images/favicon/apple-touch-icon.png")}}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{{asset("/assets/images/favicon/favicon-32x32.png")}}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{asset("/assets/images/favicon/favicon-16x16.png")}}">
-        <link rel="manifest" href="{{asset("/assets/images/favicon/site.webmanifest")}}">
-        <link rel="mask-icon" href="{{asset("/assets/images/favicon/safari-pinned-tab.svg")}}" color="#4566D8"> --}}
+    {{--    <link rel="apple-touch-icon" sizes="180x180" href="{{secure_asset("/secure_assets/images/favicon/apple-touch-icon.png")}}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{secure_asset("/secure_assets/images/favicon/favicon-32x32.png")}}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{secure_asset("/secure_assets/images/favicon/favicon-16x16.png")}}">
+        <link rel="manifest" href="{{secure_asset("/secure_assets/images/favicon/site.webmanifest")}}">
+        <link rel="mask-icon" href="{{secure_asset("/secure_assets/images/favicon/safari-pinned-tab.svg")}}" color="#4566D8"> --}}
     <meta name="msapplication-TileColor" content="#4566D8">
     <meta name="theme-color" content="#ffffff">
 
     <!-- plugin css file  -->
-    <link rel="stylesheet" href="{{ asset('/plugin/datatables/responsive.dataTables.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/plugin/datatables/dataTables.bootstrap5.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/plugin/datatables/responsive.dataTables.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/plugin/datatables/dataTables.bootstrap5.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('/plugin/multi-select/css/multi-select.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/plugin/multi-select/css/multi-select.css') }}">
     <!-- Multi Select Css -->
-    <link rel="stylesheet" href="{{ asset('/plugin/bootstrap-tagsinput/bootstrap-tagsinput.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/plugin/bootstrap-tagsinput/bootstrap-tagsinput.css') }}">
     <!-- Bootstrap Tagsinput Css -->
-    <link rel="stylesheet" href="{{ asset('/plugin/cropper/cropper.min.css') }}"><!--Cropperer Css -->
-    <link rel="stylesheet" href="{{ asset('/plugin/dropify/dist/css/dropify.min.css') }}" /><!-- Dropify Css -->
+    <link rel="stylesheet" href="{{ secure_asset('/plugin/cropper/cropper.min.css') }}"><!--Cropperer Css -->
+    <link rel="stylesheet" href="{{ secure_asset('/plugin/dropify/dist/css/dropify.min.css') }}" /><!-- Dropify Css -->
 
 
     <!-- Select2 -->
-    <link rel="stylesheet" href="{{ asset('/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/css/select2.min.css') }}">
 
     <!-- project css file  -->
-    <link rel="stylesheet" href="{{ asset('/css/ebazar.style.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/css/ebazar.style.min.css') }}">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
 
         <div class="sidebar px-4 py-4 py-md-4 me-0">
             <div class="d-flex flex-column h-100">
-                <a href="{{ url('/index') }}" class="mb-0 brand-icon">
+                <a href="{{ secure_url('/index') }}" class="mb-0 brand-icon">
                     <span class="logo-icon">
                         <i class="bi bi-bag-check-fill fs-4"></i>
                     </span>
@@ -48,7 +48,7 @@
                 </a>
                 <!-- Menu: main ul -->
                 <ul class="menu-list flex-grow-1 mt-3">
-                    <li><a class="m-link active" href="{{ url('/index') }}"><i class="icofont-home fs-5"></i>
+                    <li><a class="m-link active" href="{{ secure_url('/index') }}"><i class="icofont-home fs-5"></i>
                             <span>Dashboard</span></a></li>
 
                     <li class="collapsed">
@@ -57,8 +57,8 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="categories">
-                            <li><a class="ms-link" href="{{ url('/category') }}">Categories List</a></li>
-                            {{--  <li><a class="ms-link" href="{{url("/subcategory")}}">Sub Categories</a></li> --}}
+                            <li><a class="ms-link" href="{{ secure_url('/category') }}">Categories List</a></li>
+                            {{--  <li><a class="ms-link" href="{{secure_url("/subcategory")}}">Sub Categories</a></li> --}}
                         </ul>
                     </li>
 
@@ -69,13 +69,13 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="homepage">
-                            <li><a class="ms-link" href="{{ url('/slider') }}">Slider </a></li>
-                            <li><a class="ms-link" href="{{ url('/banner') }}">Banner </a></li>
-                            <li><a class="ms-link" href="{{ url('/featuredproduct') }}">Featured </a></li>
-                            {{--  <li><a class="ms-link" href="{{url("/newin")}}">New In </a></li>
+                            <li><a class="ms-link" href="{{ secure_url('/slider') }}">Slider </a></li>
+                            <li><a class="ms-link" href="{{ secure_url('/banner') }}">Banner </a></li>
+                            <li><a class="ms-link" href="{{ secure_url('/featuredproduct') }}">Featured </a></li>
+                            {{--  <li><a class="ms-link" href="{{secure_url("/newin")}}">New In </a></li>
                                
-                                <li><a class="ms-link" href="{{url("/bestseller")}}">Best Seller </a></li>
-                                <li><a class="ms-link" href="{{url("/toprated")}}">Top Rated </a></li> --}}
+                                <li><a class="ms-link" href="{{secure_url("/bestseller")}}">Best Seller </a></li>
+                                <li><a class="ms-link" href="{{secure_url("/toprated")}}">Top Rated </a></li> --}}
                         </ul>
                     </li>
 
@@ -85,8 +85,8 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="menu-product">
-                            <li><a class="ms-link" href="{{ url('/product') }}">Product </a></li>
-                            <li><a class="ms-link" href="{{ url('/product/add') }}">Product Add</a></li>
+                            <li><a class="ms-link" href="{{ secure_url('/product') }}">Product </a></li>
+                            <li><a class="ms-link" href="{{ secure_url('/product/add') }}">Product Add</a></li>
                         </ul>
                     </li>
 
@@ -96,7 +96,7 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="menu-order">
-                            <li><a class="ms-link" href="{{ url('/order') }}">Orders List</a></li>
+                            <li><a class="ms-link" href="{{ secure_url('/order') }}">Orders List</a></li>
                         </ul>
                     </li>
 
@@ -105,7 +105,7 @@
                         <i class="icofont-building fs-5"></i> <span>Offline Sales</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="menu-orderoffline">
-                            <li><a class="ms-link" href="{{url("/offline")}}">Offline</a></li>
+                            <li><a class="ms-link" href="{{secure_url("/offline")}}">Offline</a></li>
                         </ul>
                     </li> --}}
 
@@ -115,7 +115,7 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="customers-info">
-                            <li><a class="ms-link" href="{{ url('/customer') }}">Customers List</a></li>
+                            <li><a class="ms-link" href="{{ secure_url('/customer') }}">Customers List</a></li>
                         </ul>
                     </li>
                     <li class="collapsed">
@@ -124,9 +124,9 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="menu-sale">
-                            <li><a class="ms-link" href="{{ url('/coupon') }}">Coupons List</a></li>
-                            <li><a class="ms-link" href="{{ url('/mail') }}">Send Mail</a></li>
-                            {{-- <li><a class="ms-link" href="{{url("/newsletter")}}">Newsletter Subscribers</a></li> --}}
+                            <li><a class="ms-link" href="{{ secure_url('/coupon') }}">Coupons List</a></li>
+                            <li><a class="ms-link" href="{{ secure_url('/mail') }}">Send Mail</a></li>
+                            {{-- <li><a class="ms-link" href="{{secure_url("/newsletter")}}">Newsletter Subscribers</a></li> --}}
                         </ul>
                     </li>
 
@@ -136,9 +136,9 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="menu-inventory">
-                            <li><a class="ms-link" href="{{ url('/stocklist') }}">Stock List</a></li>
-                            {{-- <li><a class="ms-link" href="{{url("/purchase")}}">Purchase</a></li>
-                            <li><a class="ms-link" href="{{url("/returns")}}">Returns</a></li>  --}}
+                            <li><a class="ms-link" href="{{ secure_url('/stocklist') }}">Stock List</a></li>
+                            {{-- <li><a class="ms-link" href="{{secure_url("/purchase")}}">Purchase</a></li>
+                            <li><a class="ms-link" href="{{secure_url("/returns")}}">Returns</a></li>  --}}
                         </ul>
                     </li>
 
@@ -148,8 +148,8 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="menu-delivery">
-                            <li><a class="ms-link" href="{{ url('/delivery') }}"> Delivery</a></li>
-                            {{-- <li><a class="ms-link" href="{{url("/returns")}}">Returns</a></li>  --}}
+                            <li><a class="ms-link" href="{{ secure_url('/delivery') }}"> Delivery</a></li>
+                            {{-- <li><a class="ms-link" href="{{secure_url("/returns")}}">Returns</a></li>  --}}
                         </ul>
                     </li>
 
@@ -158,9 +158,9 @@
                                 class="icofont-ui-calculator"></i> <span>Delivery Fee</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="menu-Componentsone">
-                            <li><a class="ms-link" href="{{url("/delivery/country")}}">Set Fee By Country </a></li>
-                            <li><a class="ms-link" href="{{url("/delivery/state")}}">Set Fee By State </a></li>
-                            <li><a class="ms-link" href="{{url("/shippingestimate")}}">Calculate Shipping Estimate </a></li>
+                            <li><a class="ms-link" href="{{secure_url("/delivery/country")}}">Set Fee By Country </a></li>
+                            <li><a class="ms-link" href="{{secure_url("/delivery/state")}}">Set Fee By State </a></li>
+                            <li><a class="ms-link" href="{{secure_url("/shippingestimate")}}">Calculate Shipping Estimate </a></li>
                         </ul>
                     </li> --}}
                     {{--  <li class="collapsed">
@@ -168,8 +168,8 @@
                         <i class="icofont-blogger fs-5"></i> <span>Blog</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="blog">
-                            <li><a class="ms-link" href="{{url("/blog")}}">Blog List</a></li>
-                            <li><a class="ms-link" href="{{url("/blog/add")}}"> Blog Add</a></li>
+                            <li><a class="ms-link" href="{{secure_url("/blog")}}">Blog List</a></li>
+                            <li><a class="ms-link" href="{{secure_url("/blog/add")}}"> Blog Add</a></li>
                         </ul>
                     </li> --}}
 
@@ -178,8 +178,8 @@
                         <i class="icofont-credit-card fs-5"></i> <span>Payment</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="app">
-                            <li><a class="ms-link" href="{{url("/paymentmethod")}}">Payment Method</a></li>
-                            <li><a class="ms-link" href="{{url("/paymentgateway")}}"> Payment Gateway</a></li>
+                            <li><a class="ms-link" href="{{secure_url("/paymentmethod")}}">Payment Method</a></li>
+                            <li><a class="ms-link" href="{{secure_url("/paymentgateway")}}"> Payment Gateway</a></li>
                         </ul>
                     </li> --}}
 
@@ -188,7 +188,7 @@
                         <i class="icofont-facebook fs-5"></i> <span>Facebook Shop</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="socials">
-                            <li><a class="ms-link" href="{{url("/facebook")}}">Export Data</a></li>
+                            <li><a class="ms-link" href="{{secure_url("/facebook")}}">Export Data</a></li>
                         </ul>
                     </li> --}}
 
@@ -198,9 +198,9 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="store">
-                            <li><a class="ms-link" href="{{ url('/details') }}">Details</a></li>
-                            <li><a class="ms-link" href="{{ url('/about') }}"> About/Privacy/Terms</a></li>
-                            {{-- <li><a class="ms-link" href="{{url("/referral")}}"> Referral</a></li> --}}
+                            <li><a class="ms-link" href="{{ secure_url('/details') }}">Details</a></li>
+                            <li><a class="ms-link" href="{{ secure_url('/about') }}"> About/Privacy/Terms</a></li>
+                            {{-- <li><a class="ms-link" href="{{secure_url("/referral")}}"> Referral</a></li> --}}
                         </ul>
                     </li>
 
@@ -209,7 +209,7 @@
                         <i class="icofont-credit-card fs-5"></i> <span>Subscription</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="subscribe">
-                            <li><a class="ms-link" href="{{url("/payment")}}">Subscription</a></li>
+                            <li><a class="ms-link" href="{{secure_url("/payment")}}">Subscription</a></li>
                         </ul>
                     </li>
  --}}
@@ -218,7 +218,7 @@
                         <i class="icofont-law-document fs-5"></i> <span>Documentation</span> <span class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="doc">
-                            <li><a class="ms-link" href="{{url("/documentation")}}">Documentation</a></li>
+                            <li><a class="ms-link" href="{{secure_url("/documentation")}}">Documentation</a></li>
                         </ul>
                     </li> --}}
 
@@ -287,7 +287,7 @@
                                 <a class="nav-link dropdown-toggle pulse p-0" href="#" role="button"
                                     data-bs-toggle="dropdown" data-bs-display="static">
                                     <img class="avatar lg rounded-circle img-thumbnail"
-                                        src="{{ asset('/images/lg/avatar4.svg') }}" alt="profile">
+                                        src="{{ secure_asset('/images/lg/avatar4.svg') }}" alt="profile">
                                 </a>
                                 <div
                                     class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0">
@@ -295,7 +295,8 @@
                                         <div class="card-body pb-0">
                                             <div class="d-flex py-1">
                                                 <img class="avatar rounded-circle"
-                                                    src="{{ asset('/images/lg/avatar4.svg') }}" alt="profile">
+                                                    src="{{ secure_asset('/images/lg/avatar4.svg') }}"
+                                                    alt="profile">
                                                 <div class="flex-fill ms-3">
                                                     <p class="mb-0"><span
                                                             class="font-weight-bold">{{ Session::get('name') }}</span>
@@ -309,13 +310,13 @@
                                             </div>
                                         </div>
                                         <div class="list-group m-2 ">
-                                            <a href="{{ url('/profile') }}"
+                                            <a href="{{ secure_url('/profile') }}"
                                                 class="list-group-item list-group-item-action border-0 "><i
                                                     class="icofont-ui-user fs-5 me-3"></i>Profile Page</a>
-                                            <a href="{{ url('/admin') }}"
+                                            <a href="{{ secure_url('/admin') }}"
                                                 class="list-group-item list-group-item-action border-0 "><i
                                                     class="icofont-file-text fs-5 me-3"></i>Admin</a>
-                                            <a href="{{ url('/logout') }}"
+                                            <a href="{{ secure_url('/logout') }}"
                                                 class="list-group-item list-group-item-action border-0 "><i
                                                     class="icofont-logout fs-5 me-3"></i>Signout</a>
                                         </div>
@@ -358,34 +359,34 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- Jquery Core Js -->
-    <script src="{{ asset('/bundles/libscripts.bundle.js') }}"></script>
+    <script src="{{ secure_asset('/bundles/libscripts.bundle.js') }}"></script>
 
-    <script src="{{ asset('/bundles/dataTables.bundle.js') }}"></script>
+    <script src="{{ secure_asset('/bundles/dataTables.bundle.js') }}"></script>
 
     <!-- ChartJS -->
-    <script src="{{ asset('/js/Chart.min.js') }}"></script>
+    <script src="{{ secure_asset('/js/Chart.min.js') }}"></script>
 
     <!-- print -->
-    <script src="{{ asset('/js/jQuery.print.min.js') }}"></script>
+    <script src="{{ secure_asset('/js/jQuery.print.min.js') }}"></script>
 
 
 
 
-    <!--<script src="{{ asset('/js/page/index.js') }}"></script>-->
+    <!--<script src="{{ secure_asset('/js/page/index.js') }}"></script>-->
 
     <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
-    <script src="{{ asset('/plugin/multi-select/js/jquery.multi-select.js') }}"></script>
-    <script src="{{ asset('/plugin/bootstrap-tagsinput/bootstrap-tagsinput.js') }}"></script>
-    <script src="{{ asset('/plugin/cropper/cropper.min.js') }}"></script>
-    <script src="{{ asset('/bundles/dropify.bundle.js') }}"></script>
-    <script src="{{ asset('/bundles/dataTables.bundle.js') }}"></script>
+    <script src="{{ secure_asset('/plugin/multi-select/js/jquery.multi-select.js') }}"></script>
+    <script src="{{ secure_asset('/plugin/bootstrap-tagsinput/bootstrap-tagsinput.js') }}"></script>
+    <script src="{{ secure_asset('/plugin/cropper/cropper.min.js') }}"></script>
+    <script src="{{ secure_asset('/bundles/dropify.bundle.js') }}"></script>
+    <script src="{{ secure_asset('/bundles/dataTables.bundle.js') }}"></script>
 
-    <!--<script src="{{ asset('/js/dashboard.js') }}"></script>-->
+    <!--<script src="{{ secure_asset('/js/dashboard.js') }}"></script>-->
 
-    <script src="{{ asset('/js/template.js') }}"></script>
+    <script src="{{ secure_asset('/js/template.js') }}"></script>
 
     <!-- Select2 -->
-    <script src="{{ asset('/js/select2.full.min.js') }}"></script>
+    <script src="{{ secure_asset('/js/select2.full.min.js') }}"></script>
 
     <script>
         // project data table
@@ -427,7 +428,7 @@
 
 
                     $.ajax({
-                        url: '{{ url('get-plan-amount') }}',
+                        secure_url: '{{ secure_url('get-plan-amount') }}',
                         method: "post",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -456,7 +457,7 @@
                 var planID = $("#plan").val();
 
                 $.ajax({
-                    url: '{{ url('apply-coupon') }}',
+                    secure_url: '{{ secure_url('apply-coupon') }}',
                     method: "POST",
                     data: {
                         _token: '{{ csrf_token() }}',
@@ -581,7 +582,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-options-edit') }}',
+                        secure_url: '{{ secure_url('delete-options-edit') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -605,7 +606,7 @@
             function loadEditOption(optionid) {
 
                 $.ajax({
-                    url: '{{ url('load-option-value') }}',
+                    secure_url: '{{ secure_url('load-option-value') }}',
                     method: "post",
                     data: {
                         _token: '{{ csrf_token() }}',
@@ -644,7 +645,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-related-edit') }}',
+                        secure_url: '{{ secure_url('delete-related-edit') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -671,7 +672,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-productcategory') }}',
+                        secure_url: '{{ secure_url('delete-productcategory') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -697,7 +698,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-subcategory-edit') }}',
+                        secure_url: '{{ secure_url('delete-subcategory-edit') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -732,7 +733,7 @@
 
                 if(confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-vendor-product') }}',
+                        secure_url: '{{ secure_url('delete-vendor-product') }}',
                         method: "POST",
                         data: {_token: '{{ csrf_token() }}', id: ele.attr("data-id")},
                         success: function (response) {
@@ -787,7 +788,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-vendor-subcategory') }}',
+                        secure_url: '{{ secure_url('delete-vendor-subcategory') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -813,7 +814,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('deleteDelivery') }}',
+                        secure_url: '{{ secure_url('deleteDelivery') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -868,7 +869,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-vendor-newin') }}',
+                        secure_url: '{{ secure_url('delete-vendor-newin') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -893,7 +894,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-featured') }}',
+                        secure_url: '{{ secure_url('delete-featured') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -918,7 +919,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-vendor-bestseller') }}',
+                        secure_url: '{{ secure_url('delete-vendor-bestseller') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -943,7 +944,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-vendor-toprated') }}',
+                        secure_url: '{{ secure_url('delete-vendor-toprated') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -1103,7 +1104,7 @@
             function loadState(countryid) {
 
                 $.ajax({
-                    url: '{{ url('shipping-vendor-getstate') }}',
+                    secure_url: '{{ secure_url('shipping-vendor-getstate') }}',
                     method: "post",
                     data: {
                         _token: '{{ csrf_token() }}',
@@ -1132,7 +1133,7 @@
             function loadCity(stateid) {
 
                 $.ajax({
-                    url: '{{ url('shipping-vendor-getcity') }}',
+                    secure_url: '{{ secure_url('shipping-vendor-getcity') }}',
                     method: "post",
                     data: {
                         _token: '{{ csrf_token() }}',
@@ -1167,7 +1168,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-blog') }}',
+                        secure_url: '{{ secure_url('delete-blog') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -1211,7 +1212,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-admin') }}',
+                        secure_url: '{{ secure_url('delete-admin') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -1246,7 +1247,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('vendor-filterdescription') }}',
+                        secure_url: '{{ secure_url('vendor-filterdescription') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -1278,7 +1279,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('vendor-option') }}',
+                        secure_url: '{{ secure_url('vendor-option') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -1301,7 +1302,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('vendor-optiondetails') }}',
+                        secure_url: '{{ secure_url('vendor-optiondetails') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -1327,7 +1328,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-store-address') }}',
+                        secure_url: '{{ secure_url('delete-store-address') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -1374,7 +1375,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-returns') }}',
+                        secure_url: '{{ secure_url('delete-returns') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -1397,7 +1398,7 @@
 
                 if (confirm("Are you sure")) {
                     $.ajax({
-                        url: '{{ url('delete-purchase') }}',
+                        secure_url: '{{ secure_url('delete-purchase') }}',
                         method: "POST",
                         data: {
                             _token: '{{ csrf_token() }}',
@@ -1419,7 +1420,7 @@
                 $("#optiondiv").empty();
 
                 $.ajax({
-                    url: '{{ url('product-options') }}',
+                    secure_url: '{{ secure_url('product-options') }}',
                     method: "POST",
                     data: {
                         _token: '{{ csrf_token() }}',
@@ -1642,7 +1643,7 @@
                 var cityid = this.value;
 
                 $.ajax({
-                    url: '{{ url('offline-shippingestimate') }}',
+                    secure_url: '{{ secure_url('offline-shippingestimate') }}',
                     method: "POST",
                     data: {
                         _token: '{{ csrf_token() }}',

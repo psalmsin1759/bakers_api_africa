@@ -9,8 +9,8 @@
                         class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
                         <h3 class="fw-bold mb-0">Products</h3>
                         {{-- <div class="btn-group group-link btn-set-task w-sm-100">
-                        <a href="{{url("vendor/productgrid")}}" class="btn d-inline-flex align-items-center" aria-current="page"><i class="icofont-wall px-2 fs-5"></i>Grid View</a>
-                        <a href="{{url("vendor/product")}}" class="btn active d-inline-flex align-items-center"><i class="icofont-listing-box px-2 fs-5"></i> List View</a>
+                        <a href="{{secure_url("vendor/productgrid")}}" class="btn d-inline-flex align-items-center" aria-current="page"><i class="icofont-wall px-2 fs-5"></i>Grid View</a>
+                        <a href="{{secure_url("vendor/product")}}" class="btn active d-inline-flex align-items-center"><i class="icofont-listing-box px-2 fs-5"></i> List View</a>
                     </div> --}}
                     </div>
                 </div>
@@ -55,13 +55,13 @@
                                         <tr>
                                             <td></td>
                                             @if ($item->images->count() > 0)
-                                                <td><a href="{{ url('product/' . $item->id) }}" class="fw-bold"><img
+                                                <td><a href="{{ secure_url('product/' . $item->id) }}" class="fw-bold"><img
                                                             style="width: 67px; height: 100px"
-                                                            src="{{ url('https://storage.googleapis.com/bakersluxury/' . $item->images->first()->path) }}"
+                                                            src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $item->images->first()->path) }}"
                                                             class="avatar lg rounded me-2" alt="profile-image"><span>
                                                             {{ $item->name }} </span></a></td>
                                             @else
-                                                <td><a href="{{ url('product/' . $item->id) }}" class="fw-bold"><img
+                                                <td><a href="{{ secure_url('product/' . $item->id) }}" class="fw-bold"><img
                                                             style="width: 67px; height: 100px"
                                                             src="https://placehold.co/67x100.png"
                                                             class="avatar lg rounded me-2" alt="profile-image"><span>
@@ -116,7 +116,7 @@
                     <h5 class="modal-title  fw-bold" id="expeditLabel"> Delete Product</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('product/delete') }}">
+                <form method="POST" action="{{ secure_url('product/delete') }}">
                     <div class="modal-body">
 
                         {{ csrf_field() }}

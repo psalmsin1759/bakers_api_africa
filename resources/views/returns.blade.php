@@ -41,7 +41,7 @@
                                         {{$item->productname}} 
                                     </td>
                                     <td>
-                                        <img class="avatar rounded" src="{{asset("dashboardassets/images/xs/avatar4.svg")}}" alt="">
+                                        <img class="avatar rounded" src="{{secure_asset("dashboardsecure_assets/images/xs/avatar4.svg")}}" alt="">
                                         <span class="fw-bold ms-1">{{$item->customer_name}} </span>
                                         
                                     </td>
@@ -83,7 +83,7 @@
 
     <!-- Add Expence-->
     <div class="modal fade" id="expadd" tabindex="-1" aria-hidden="true">
-        <form method="POST" action="{{ url('/vendor/returns/add') }}">
+        <form method="POST" action="{{ secure_url('/vendor/returns/add') }}">
             {{ csrf_field() }}
             <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
                 <div class="modal-content">

@@ -5,7 +5,7 @@
         <div class="container-xxl">
             @include('flash-message')
 
-            <form method="POST" action="{{ url('/mail/send') }}">
+            <form method="POST" action="{{ secure_url('/mail/send') }}">
                 {{ csrf_field() }}
                 <div class="row align-items-center">
                     <div class="border-0 mb-4">

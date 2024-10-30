@@ -77,7 +77,7 @@
                     <h5 class="modal-title  fw-bold" id="expaddLabel"> Add Administrator</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('admins') }}">
+                <form method="POST" action="{{ secure_url('admins') }}">
 
                     <div class="modal-body">
 
@@ -146,7 +146,7 @@
                     <h5 class="modal-title  fw-bold" id="expeditLabel"> Disable/Enable Admin</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ url('admin/changestatus') }}">
+                <form method="POST" action="{{ secure_url('admin/changestatus') }}">
                     <div class="modal-body">
 
                         {{ csrf_field() }}
