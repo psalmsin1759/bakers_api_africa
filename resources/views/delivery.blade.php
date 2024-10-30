@@ -108,11 +108,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form method="POST" enctype="multipart/form-data" action="{{ secure_url('/delivery/add') }}">
+                    @csrf
                     <div class="modal-body">
 
                         <div class="deadline-form">
 
-                            {{ csrf_field() }}
+
 
                             <div class="row g-3 mb-3">
                                 <div class="col-sm-12">

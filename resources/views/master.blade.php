@@ -659,31 +659,7 @@
                 }
             });
 
-            // delete edit category
-            $(".delete-editcategory").click(function(e) {
-                e.preventDefault();
 
-                var ele = $(this);
-
-                var id = ele.attr("data-id");
-                //console.log(id);
-
-
-                if (confirm("Are you sure")) {
-                    $.ajax({
-                        secure_url: '{{ secure_url('delete-category') }}',
-                        method: "POST",
-                        data: {
-                            _token: '{{ csrf_token() }}',
-                            id: ele.attr("data-id")
-                        },
-                        success: function(response) {
-                            //console.log(response);
-                            window.location.reload();
-                        }
-                    });
-                }
-            });
 
             $(".delete-editproductcategory").click(function(e) {
                 e.preventDefault();
@@ -768,33 +744,31 @@
                 }
             });*/
 
+            $(document).on('click', ".delete-category", function() {
 
-            //delete category
-            // delete filter
-            $(".delete-category").click(function(e) {
-                e.preventDefault();
+                $('#deleteCategoryId').val($(this).data('id'));
 
-                var ele = $(this);
-
-                var id = ele.attr("data-id");
-                //console.log(id);
-
-
-                if (confirm("Are you sure")) {
-                    $.ajax({
-                        secure_url: '{{ secure_url('delete-category') }}',
-                        method: "POST",
-                        data: {
-                            _token: '{{ csrf_token() }}',
-                            id: ele.attr("data-id")
-                        },
-                        success: function(response) {
-                            console.log(response);
-                            window.location.reload();
-                        }
-                    });
-                }
             });
+
+            $(document).on('click', ".delete-slider", function() {
+
+                $('#deleteSliderId').val($(this).data('id'));
+
+            });
+
+            $(document).on('click', ".delete-banner", function() {
+
+                $('#deleteBannerId').val($(this).data('id'));
+
+            });
+
+            $(document).on('click', ".delete-coupon", function() {
+
+                $('#deleteCouponId').val($(this).data('id'));
+
+            });
+
+
 
             //delete subcategory
             $(".delete-subcategory").click(function(e) {
@@ -822,49 +796,9 @@
                 }
             });
 
-            // delete slider
-            $(".delete-slider").click(function(e) {
-                e.preventDefault();
 
-                var ele = $(this);
 
-                if (confirm("Are you sure")) {
-                    $.ajax({
-                        secure_url: '{{ secure_url('delete-slider') }}',
-                        method: "POST",
-                        data: {
-                            _token: '{{ csrf_token() }}',
-                            id: ele.attr("data-id")
-                        },
-                        success: function(response) {
-                            //console.log(response);
-                            window.location.reload();
-                        }
-                    });
-                }
-            });
 
-            // delete banner
-            $(".delete-banner").click(function(e) {
-                e.preventDefault();
-
-                var ele = $(this);
-
-                if (confirm("Are you sure")) {
-                    $.ajax({
-                        secure_url: '{{ secure_url('delete-banner') }}',
-                        method: "POST",
-                        data: {
-                            _token: '{{ csrf_token() }}',
-                            id: ele.attr("data-id")
-                        },
-                        success: function(response) {
-                            //console.log(response);
-                            window.location.reload();
-                        }
-                    });
-                }
-            });
 
             // delete delivery
             $(".delete-delivery").click(function(e) {
@@ -1098,29 +1032,7 @@
                 }
             });
 
-            // delete coupon
-            $(".delete-coupon").click(function(e) {
-                e.preventDefault();
 
-                var ele = $(this);
-
-                var id = ele.attr("data-id");
-
-                if (confirm("Are you sure")) {
-                    $.ajax({
-                        secure_url: '{{ secure_url('delete-vendor-coupon') }}',
-                        method: "POST",
-                        data: {
-                            _token: '{{ csrf_token() }}',
-                            id: ele.attr("data-id")
-                        },
-                        success: function(response) {
-                            console.log(response);
-                            window.location.reload();
-                        }
-                    });
-                }
-            });
 
             $('#pickcustomer').hide();
             $('#specificemail').hide();

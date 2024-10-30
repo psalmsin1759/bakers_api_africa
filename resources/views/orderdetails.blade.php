@@ -186,9 +186,9 @@
                                     class="checkout-coupon-total checkout-coupon-total-2 d-flex flex-wrap justify-content-end">
                                     <div class="checkout-total">
                                         <!--<div class="single-total">
-                                                            <p class="value">Subotal Price:</p>
-                                                            <p class="price">$1096.00</p>
-                                                        </div>-->
+                                                                            <p class="value">Subotal Price:</p>
+                                                                            <p class="price">$1096.00</p>
+                                                                        </div>-->
                                         <div class="single-total">
                                             <p class="value">Shipping(+):</p>
                                             <p class="price">{{ Session::get('eszCurrencySymbol') }}

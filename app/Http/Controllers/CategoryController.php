@@ -43,11 +43,34 @@ class CategoryController extends Controller
 
     }
 
-    public function deleteCategory(Request $request){
-
+    public function deleteCategory(Request $request)
+    {
         $id = $request->id;
-        Category::destroy($id);
 
+        // Find the category by ID
+        $category = Category::find($id);
+
+        if (!$category) {
+            return redirect("/category")->with('error', 'Category not found');
+        }
+
+        // Recursively delete child categories
+        $this->deleteChildren($category);
+
+        // Delete the parent category
+        $category->delete();
+
+        return redirect("/category")->with('success', 'Category and its children deleted successfully');
+    }
+
+    private function deleteChildren($category)
+    {
+        $children = Category::where('parent_id', $category->id)->get();
+
+        foreach ($children as $child) {
+            $this->deleteChildren($child); // Delete each child recursively
+            $child->delete(); // Delete the child after its children are deleted
+        }
     }
 
     /**
@@ -130,9 +153,6 @@ class CategoryController extends Controller
     {
         Category::destroy($id);
 
-        return response()->json([
-            'success'   => true,
-            'message'   => "success",
-        ]);
+        return redirect ("/category");
     }
 }

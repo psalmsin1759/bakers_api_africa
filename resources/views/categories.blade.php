@@ -56,8 +56,11 @@
                                                         data-sort="{{ $item->sort_order }}"><i
                                                             class="icofont-edit text-success"></i></a>
                                                     <a type="button" class="btn btn-outline-secondary delete-category"
-                                                        data-id="{{ $item->id }}"><i
-                                                            class="icofont-ui-delete text-danger"></i></a>
+                                                        data-id="{{ $item->id }}" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteCategoryModal">
+                                                        <i class="icofont-ui-delete text-danger"></i>
+                                                    </a>
+
                                                 </div>
                                             </td>
                                         </tr>
@@ -165,6 +168,30 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                         <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Category Modal -->
+    <div class="modal fade" id="deleteCategoryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="deleteCategoryLabel">Delete Category</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form method="POST" action="{{ secure_url('category/delete') }}">
+                    @csrf
+
+                    <input type="hidden" name="id" id="deleteCategoryId">
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete this category? This action cannot be undone.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-danger">Delete</button>
                     </div>
                 </form>
             </div>

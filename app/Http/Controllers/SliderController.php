@@ -72,6 +72,8 @@ class SliderController extends Controller
     public function deleteSlider(Request $request){
         $id = $request->id;
         Slider::destroy($id);
+
+        return redirect("slider");
     }
     /**
      * Display a listing of the resource.

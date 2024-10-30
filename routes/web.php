@@ -70,15 +70,15 @@ Route::post('/login', [AdminController::class, "loginAction"]);
 
     Route::post('/category/add', [CategoryController::class, "addCategory"]);
     Route::post('/category/edit', [CategoryController::class, "editCategory"]);
-    Route::post('delete-category', [CategoryController::class, "deleteCategory"]);
+    Route::post('/category/delete', [CategoryController::class, "deleteCategory"]);
 
     Route::post('/slider/add', [SliderController::class, "addSlider"]);
     Route::post('/slider/edit', [SliderController::class, "editSlider"]);
-    Route::post('/delete-slider', [SliderController::class, "deleteSlider"]);
+    Route::post('/slider/delete', [SliderController::class, "deleteSlider"]);
 
     Route::post('/banner/add', [BannerController::class, "addBanner"]);
     Route::post('/banner/edit', [BannerController::class, "editBanner"]);
-    Route::post('/delete-banner', [BannerController::class, "deleteBanner"]);
+    Route::post('/banner/delete', [BannerController::class, "deleteBanner"]);
 
 
     Route::post('/featuredproduct/add', [ProductController::class, "addFeaturedProduct"]);

@@ -83,6 +83,8 @@ class BannerController extends Controller
     public function deleteBanner(Request $request){
         $id = $request->id;
         Banner::destroy($id);
+
+        return redirect("banner");
     }
     /**
      * Display a listing of the resource.
