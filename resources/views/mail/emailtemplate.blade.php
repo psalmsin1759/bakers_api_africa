@@ -162,7 +162,7 @@
                     <tr>
                         <td align="center" class="masthead">
 
-                            <h1>House of Eppagelia</h1>
+                            <h1>BakersLuxury</h1>
 
                             {{-- <img style="height:50px" src="https://www.nodirectmessage.com/secure_assets/images/nodmlogowhite.png" /> --}}
 
@@ -190,9 +190,8 @@
                 <table>
                     <tr>
                         <td class="content footer" align="center">
-                            <p> Copyright © 2023 <a href="https://houseofeppagelia.com">House of Eppagelia</a></p>
-                            <p><a href="mailto:info@houseofeppagelia.com">info@houseofeppagelia.com</a> | <a
-                                    href="https://houseofeppagelia.com/unsubscribe">Unsubscribe</a></p>
+                            <p> Copyright © 2024 <a href="https://bakersluxury.com">Bakersluxury</a></p>
+                            <p><a href="mailto:info@bakersluxury.com">info@bakersluxury.com</a></p>
                         </td>
                     </tr>
                 </table>

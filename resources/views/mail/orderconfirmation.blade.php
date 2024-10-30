@@ -224,7 +224,7 @@
                                                                     <tr>
                                                                         <td width="200" align="left">
                                                                             <a href="#" target="_blank"
-                                                                                style="color: #ffffff">Eppagelia</a>
+                                                                                style="color: #ffffff">Bakersluxury</a>
                                                                         </td>
                                                                         <td>&nbsp;</td>
                                                                         <td align="right"
@@ -414,7 +414,7 @@
                                                                     @foreach ($orderItems as $item)
                                                                         <tr>
                                                                             <td width="130">
-                                                                               @php  $imagePath = isset($item->path) ? "https://admin.houseofeppagelia.com/images/product/". $item->path : 'http://via.placeholder.com/130'; @endphp
+                                                                               @php  $imagePath = isset($item->path) ? "https://storage.googleapis.com/bakersluxury/". $item->path : 'http://via.placeholder.com/130'; @endphp
                                                                               {{--  @php dd ($imagePath); @endphp --}}
                                                                                 <img width="130"
                                                                                     style="display:block;width:100%;max-width:130px;"
@@ -451,7 +451,7 @@
                                                                                     <tr>
                                                                                         <td align="right"
                                                                                             style="font-family:'Open Sans', Arial, Helvetica, sans-serif;font-size: 18px;color: #282828;">
-                                                                                            ${{$item->price}}</td>
+                                                                                            ₦{{$item->price}}</td>
                                                                                     </tr>
 
 
@@ -717,7 +717,7 @@
                                                                                     <td
                                                                                         style="font-family:'Open Sans', Arial, Helvetica, sans-serif;font-size: 13px;color: #282828;">
                                                                                         {{ $order->payment_method }} <br/>
-                                                                                        ${{$order->shipping_price}}
+                                                                                        ₦{{$order->shipping_price}}
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -798,7 +798,7 @@
                                                         <tr>
                                                             <td align="center"
                                                                 style="font-family:'Josefin Sans', Arial, Helvetica, sans-serif;font-size: 18px;color: #dadada;font-weight: 400;">
-                                                                Eppagelia</td>
+                                                                Bakersluxury</td>
                                                         </tr>
 
                                                         <tr>
@@ -845,7 +845,7 @@
                                                             <td align="center"
                                                                 style="font-family:'Roboto', Arial, Helvetica, sans-serif;font-size: 13px;color: #dadada;line-height: 19px;">
                                                                 This email was sent to : {{ $order->email }}<br>
-                                                                For any questions please send to info@houseofeppagelia.com
+                                                                For any questions please send to info@houseofBakersluxury.com
                                                             </td>
                                                         </tr>
                                                         <tr>
