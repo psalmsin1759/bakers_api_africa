@@ -23,7 +23,7 @@
                                 <div class="card-body d-flex profile-fulldeatil flex-column">
                                     <div class="profile-block text-center w220 mx-auto">
                                         <a href="#">
-                                            <img src="{{ secure_asset('images/lg/avatar4.svg') }}" alt=""
+                                            <img src="{{ asset('images/lg/avatar4.svg') }}" alt=""
                                                 class="avatar xl rounded img-thumbnail shadow-sm">
                                         </a>
 
@@ -84,7 +84,7 @@
                                     @foreach ($order as $item)
                                         <tr>
                                             <td><a
-                                                    href="{{ secure_url('/order/' . $item->id) }}"><strong>#Order-{{ $item->id }}</strong></a>
+                                                    href="{{ url('/order/' . $item->id) }}"><strong>#Order-{{ $item->id }}</strong></a>
                                             </td>
                                             <td>{{ $item->status }}</td>
                                             <td>{{ $item->total_price }}</td>

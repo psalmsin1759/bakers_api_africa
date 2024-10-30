@@ -53,9 +53,8 @@
                                             <td>
                                                 <b>{{ $item->sku }} </b>
                                             </td>
-                                            <td><a href="{{ secure_url('vendor/product/' . $item->id) }}"
-                                                    class="fw-bold"><img
-                                                        src="{{ secure_asset('images/product/' . $item->images->first()->path) }}"
+                                            <td><a href="{{ url('vendor/product/' . $item->id) }}" class="fw-bold"><img
+                                                        src="{{ url('https://storage.googleapis.com/bakersluxury/' . $item->images->first()->path) }}"
                                                         class="avatar lg rounded me-2" alt="profile-image"><span>
                                                         {{ $item->name }} </span></a></td>
 
@@ -89,7 +88,7 @@
 
     <!-- Add Expence-->
     <div class="modal fade" id="expadd" tabindex="-1" aria-hidden="true">
-        <form method="POST" action="{{ secure_url('/vendor/purchase/add') }}">
+        <form method="POST" action="{{ url('/vendor/purchase/add') }}">
             {{ csrf_field() }}
             <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
                 <div class="modal-content">

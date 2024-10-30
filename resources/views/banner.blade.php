@@ -53,7 +53,7 @@
                                             </td>
 
                                             <td> <img style="width: 249px; height: 150px"
-                                                    src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $item->image_path) }}"
+                                                    src="{{ url('https://storage.googleapis.com/bakersluxury/' . $item->image_path) }}"
                                                     width="20px" height="20px" /> </td>
                                             <td class="text-center p-3">{{ $item->title }} </td>
                                             <td class="text-center p-3">{{ $item->subtitle }} </td>
@@ -83,7 +83,7 @@
                     <h5 class="modal-title  fw-bold" id="expaddLabel"> Add Banner</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" enctype="multipart/form-data" action="{{ secure_url('/banner/add') }}">
+                <form method="POST" enctype="multipart/form-data" action="{{ url('/banner/add') }}">
                     <div class="modal-body">
 
                         <div class="deadline-form">
@@ -135,7 +135,7 @@
                     <h5 class="modal-title  fw-bold" id="editsliderLabel"> Edit Banner Info</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" enctype="multipart/form-data" action="{{ secure_url('banner/edit') }}">
+                <form method="POST" enctype="multipart/form-data" action="{{ url('banner/edit') }}">
                     <div class="modal-body">
 
                         {{ csrf_field() }}
@@ -189,7 +189,7 @@
                     <h5 class="modal-title fw-bold" id="deleteCategoryLabel">Delete Banner</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ secure_url('banner/delete') }}">
+                <form method="POST" action="{{ url('banner/delete') }}">
                     @csrf
 
                     <input type="hidden" name="id" id="deleteBannerId">

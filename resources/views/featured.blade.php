@@ -25,7 +25,7 @@
 
                                 <div class="collapse show" id="category">
 
-                                    <form method="POST" action="{{ secure_url('featuredproduct/add') }}">
+                                    <form method="POST" action="{{ url('featuredproduct/add') }}">
                                         {{ csrf_field() }}
 
                                         <div class="row g-3 mb-3">
@@ -82,12 +82,12 @@
                                                 </div>
                                             </td>
                                             @if ($item->images->count() > 0)
-                                                <td><img src="{{ secure_asset('images/product/' . $item->images->first()->path) }}"
+                                                <td><img src="{{ asset('images/product/' . $item->images->first()->path) }}"
                                                         class="avatar lg rounded me-2" alt="profile-image"><span>
                                                         {{ $item->name }} </span></td>
                                             @else
-                                                <td><img src="{{ secure_asset('images/product/') }}"
-                                                        class="avatar lg rounded me-2" alt="profile-image"><span>
+                                                <td><img src="{{ asset('images/product/') }}" class="avatar lg rounded me-2"
+                                                        alt="profile-image"><span>
                                                         {{ $item->name }} </span></td>
                                             @endif
                                             <td>

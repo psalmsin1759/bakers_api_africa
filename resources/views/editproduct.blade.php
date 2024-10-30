@@ -22,7 +22,7 @@
 
                         @include('flash-message')
 
-                        <form method="POST" enctype="multipart/form-data" action="{{ secure_url('/product/edit') }}"
+                        <form method="POST" enctype="multipart/form-data" action="{{ url('/product/edit') }}"
                             name="form1">
                             {{ csrf_field() }}
 
@@ -106,7 +106,7 @@
 
                                         @if (isset($productImages[0]))
                                             <img style="width: 200px; height: 300px"
-                                                src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $productImages[0]->path) }}"
+                                                src="{{ url('https://storage.googleapis.com/bakersluxury/' . $productImages[0]->path) }}"
                                                 alt="product_small_img1" />
                                         @endif
 
@@ -123,7 +123,7 @@
                                     <div class="col-md-6">
                                         @if (isset($productImages[1]))
                                             <img style="width: 200px; height: 300px"
-                                                src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $productImages[1]->path) }}"
+                                                src="{{ url('https://storage.googleapis.com/bakersluxury/' . $productImages[1]->path) }}"
                                                 alt="product_small_img1" />
                                         @endif
                                     </div>
@@ -139,7 +139,7 @@
                                     <div class="col-md-6">
                                         @if (isset($productImages[2]))
                                             <img style="width: 200px; height: 300px"
-                                                src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $productImages[2]->path) }}"
+                                                src="{{ url('https://storage.googleapis.com/bakersluxury/' . $productImages[2]->path) }}"
                                                 alt="product_small_img1" />
                                         @endif
                                     </div>
@@ -232,7 +232,7 @@
 
                                         <div class="col-lg-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
 
-                                            <form method="POST" action="{{ secure_url('/product/edit/optionadd') }}"
+                                            <form method="POST" action="{{ url('/product/edit/optionadd') }}"
                                                 name="form2">
                                                 {{ csrf_field() }}
 
@@ -330,7 +330,7 @@
                                         <tr>
 
                                             <td>
-                                                {{--  <img src="{{secure_asset("images/products/" . $item->image_path)}}" class="avatar lg rounded me-2" alt="profile-image"> --}}<span> {{ $item->related_product_name }} </span>
+                                                {{--  <img src="{{asset("images/products/" . $item->image_path)}}" class="avatar lg rounded me-2" alt="profile-image"> --}}<span> {{ $item->related_product_name }} </span>
                                             </td>
 
                                             <td>
@@ -359,7 +359,7 @@
 
                                         <div class="col-lg-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
 
-                                            <form method="POST" action="{{ secure_url('/product/editrelatedadd') }}"
+                                            <form method="POST" action="{{ url('/product/editrelatedadd') }}"
                                                 name="form2">
                                                 {{ csrf_field() }}
 
@@ -471,7 +471,7 @@
 
                                         <div class="col-lg-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
 
-                                            <form method="POST" action="{{ secure_url('/product/editcategoryadd') }}"
+                                            <form method="POST" action="{{ url('/product/editcategoryadd') }}"
                                                 name="form2">
                                                 {{ csrf_field() }}
 
@@ -545,7 +545,7 @@
     <div class="modal fade" id="expedit" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
             <div class="modal-content">
-                <form method="POST" action="{{ secure_url('option/editquantity') }}">
+                <form method="POST" action="{{ url('option/editquantity') }}">
                     <div class="modal-header">
                         <h5 class="modal-title  fw-bold" id="expeditLabel"> Edit</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

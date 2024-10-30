@@ -119,7 +119,7 @@ Route::post('/login', [AdminController::class, "loginAction"]);
 
     Route::post("/coupon/add", [CouponController::class, "addNewCoupon"]);
 
-    Route::post("delete-vendor-coupon", [CouponController::class, "deleteNewCoupon"]);
+    Route::post("/coupon/delete", [CouponController::class, "deleteNewCoupon"]);
 
     Route::post("/mail/send", [NewsletterController::class, "sendEmail"]);
 
@@ -139,7 +139,7 @@ Route::post('/login', [AdminController::class, "loginAction"]);
 
     Route::post("delivery/edit", [DeliveryMethodController::class, "editDeliveryMethod"]);
 
-    Route::post("deleteDelivery", [DeliveryMethodController::class, "deleteDeliveryMethod"]);
+    Route::post("delivery/delete", [DeliveryMethodController::class, "deleteDeliveryMethod"]);
 
 
  });

@@ -11,7 +11,7 @@
                     </div>
                 </div>
             </div> <!-- Row end  -->
-            <form method="POST" action="{{ secure_url('/coupon/add') }}">
+            <form method="POST" action="{{ url('/coupon/add') }}">
                 {{ csrf_field() }}
                 <div class="row clearfix g-3">
                     <div class="col-lg-4">

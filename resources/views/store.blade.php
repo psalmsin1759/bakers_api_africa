@@ -3,7 +3,7 @@
     <!-- Body: Body -->
     <div class="body d-flex py-3">
         <div class="container-xxl">
-            <form method="POST" enctype="multipart/form-data" action="{{ secure_url('/store/edit') }}">
+            <form method="POST" enctype="multipart/form-data" action="{{ url('/store/edit') }}">
                 <div class="row align-items-center">
                     <div class="border-0 mb-4">
                         <div

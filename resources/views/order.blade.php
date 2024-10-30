@@ -44,7 +44,7 @@
 
                                         <tr>
                                             <td><a
-                                                    href="{{ secure_url('order/' . $item->id) }}"><strong>#Order-{{ $item->orderid }}</strong></a>
+                                                    href="{{ url('order/' . $item->id) }}"><strong>#Order-{{ $item->orderid }}</strong></a>
                                             </td>
                                             <td><span class="badge bg-{{ $color }}"> {{ $item->status }}</span></td>
                                             <td>{{ $item->total_price }}</td>

@@ -65,6 +65,7 @@ class DeliveryMethodController extends Controller
         $id = $request->id;
         DeliveryMethod::destroy($id);
 
+        return redirect ("delivery");
     }
 
     public function getDeliveryMethods(){

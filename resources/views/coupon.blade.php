@@ -9,7 +9,7 @@
                         class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
                         <h3 class="fw-bold mb-0">Coupons</h3>
                         <div class="col-auto d-flex w-sm-100">
-                            <a href="{{ secure_url('coupon/add') }}" class="btn btn-primary btn-set-task w-sm-100"><i
+                            <a href="{{ url('coupon/add') }}" class="btn btn-primary btn-set-task w-sm-100"><i
                                     class="icofont-plus-circle me-2 fs-6"></i>Add Coupons</a>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                                             <td>{{ $item->end_date }}</td>
                                             <td>
                                                 <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                                    {{-- <a href="{{secure_url("/coupon/edit/" . $item->id)}}" class="btn btn-outline-secondary"><i class="icofont-edit text-success"></i></a> --}}
+                                                    {{-- <a href="{{url("/coupon/edit/" . $item->id)}}" class="btn btn-outline-secondary"><i class="icofont-edit text-success"></i></a> --}}
                                                     <a type="button" class="btn btn-outline-secondary delete-coupon"
                                                         data-id="{{ $item->id }}" data-bs-toggle="modal"
                                                         data-bs-target="#deleteCategoryModal">
@@ -78,7 +78,7 @@
                     <h5 class="modal-title fw-bold" id="deleteCategoryLabel">Delete Coupon</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="{{ secure_url('coupon/delete') }}">
+                <form method="POST" action="{{ url('coupon/delete') }}">
                     @csrf
 
                     <input type="hidden" name="id" id="deleteCouponId">

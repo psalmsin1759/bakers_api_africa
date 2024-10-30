@@ -12,22 +12,22 @@
     <meta name="website" content="https://nodirectmessage.com" />
     <meta name="Version" content="v3.8.0" />
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ secure_asset('/images/favicon/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ secure_asset('/images/favicon/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('/images/favicon/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ secure_asset('/images/favicon/site.webmanifest') }}">
-    <link rel="mask-icon" href="{{ secure_asset('/images/favicon/safari-pinned-tab.svg') }}" color="#4566D8">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/images/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('/images/favicon/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('/images/favicon/safari-pinned-tab.svg') }}" color="#4566D8">
     <meta name="msapplication-TileColor" content="#4566D8">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap -->
-    <link href="{{ secure_asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- Icons -->
-    <link href="{{ secure_asset('/css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('/css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <!-- Main Css -->
-    <link href="{{ secure_asset('/css/style.css') }}" rel="stylesheet" type="text/css" id="theme-opt" />
-    <link href="{{ secure_asset('/css/colors/default.css') }}" rel="stylesheet" id="color-opt">
+    <link href="{{ asset('/css/style.css') }}" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="{{ asset('/css/colors/default.css') }}" rel="stylesheet" id="color-opt">
 
 </head>
 
@@ -44,15 +44,15 @@
     <!-- Loader -->
 
     <section class="bg-home d-flex align-items-center position-relative"
-        style="background: secure_url('dashboardsecure_assets/images/shape01.png') center;">
+        style="background: url('dashboardassets/images/shape01.png') center;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="form-signin p-4 bg-white rounded shadow">
                         @include('flash-message')
-                        <form method="POST" action="{{ secure_url('/login') }}">
+                        <form method="POST" action="{{ url('/login') }}">
                             {{ csrf_field() }}
-                            <a href="{{ secure_url('/') }}"><img src="{{ secure_asset('/images/nodmlogo.png') }}"
+                            <a href="{{ url('/') }}"><img src="{{ asset('/images/nodmlogo.png') }}"
                                     class="avatar avatar-small mb-4 d-block mx-auto" alt=""></a>
                             <h5 class="mb-3 text-center">Please sign in</h5>
 
@@ -76,7 +76,7 @@
                                         <label class="form-check-label" for="flexCheckDefault">Remember me</label>
                                     </div>
                                 </div>
-                                <p class="forgot-pass mb-0"><a href="{{ secure_url('/forgotpassword') }}"
+                                <p class="forgot-pass mb-0"><a href="{{ url('/forgotpassword') }}"
                                         class="text-dark small fw-bold">Forgot password ?</a></p>
                             </div>
 
@@ -100,15 +100,15 @@
 
 
     <!-- javascript -->
-    <script src="{{ secure_asset('/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
     <!-- Icons -->
-    <script src="{{ secure_asset('/js/feather.min.js') }}"></script>
+    <script src="{{ asset('/js/feather.min.js') }}"></script>
     <!-- Switcher -->
-    <script src="{{ secure_asset('/js/switcher.js') }}"></script>
+    <script src="{{ asset('/js/switcher.js') }}"></script>
     <!-- Main Js -->
-    <script src="{{ secure_asset('/js/plugins.init.js') }}"></script>
+    <script src="{{ asset('/js/plugins.init.js') }}"></script>
     <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
-    <script src="{{ secure_asset('/js/app.js') }}"></script>
+    <script src="{{ asset('/js/app.js') }}"></script>
     <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
 </body>
 

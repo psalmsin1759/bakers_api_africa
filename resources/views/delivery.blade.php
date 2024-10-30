@@ -69,9 +69,13 @@
                                                         data-sort="{{ $item->sort_order }}"
                                                         data-created="{{ $item->created_at }}"><i
                                                             class="icofont-edit text-success"></i></button>
+
                                                     <a type="button" class="btn btn-outline-secondary delete-delivery"
-                                                        data-id="{{ $item->id }}"><i
-                                                            class="icofont-ui-delete text-danger"></i></a>
+                                                        data-id="{{ $item->id }}" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteCategoryModal">
+                                                        <i class="icofont-ui-delete text-danger"></i>
+                                                    </a>
+
                                                 </div>
                                             </td>
 
@@ -107,7 +111,7 @@
                     <h5 class="modal-title  fw-bold" id="expaddLabel"> Add</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" enctype="multipart/form-data" action="{{ secure_url('/delivery/add') }}">
+                <form method="POST" enctype="multipart/form-data" action="{{ url('/delivery/add') }}">
                     @csrf
                     <div class="modal-body">
 
@@ -162,7 +166,7 @@
                     <h5 class="modal-title  fw-bold" id="editsliderLabel"> Edit Delivery Method</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" enctype="multipart/form-data" action="{{ secure_url('delivery/edit') }}">
+                <form method="POST" enctype="multipart/form-data" action="{{ url('delivery/edit') }}">
                     <div class="modal-body">
 
                         {{ csrf_field() }}
@@ -213,6 +217,30 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
                         <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="deleteCategoryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="deleteCategoryLabel">Delete Delivery method</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form method="POST" action="{{ url('delivery/delete') }}">
+                    @csrf
+
+                    <input type="hidden" name="id" id="deleteDeliveryId">
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete? This action cannot be undone.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-danger">Delete</button>
                     </div>
                 </form>
             </div>
