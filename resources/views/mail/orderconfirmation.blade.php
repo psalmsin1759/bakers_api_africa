@@ -312,7 +312,7 @@
                                                             <td align="center"
                                                                 style="font-family:'Josefin Sans', Arial, Helvetica, sans-serif;font-size: 24px;color: #282828;line-height: 25px;">
                                                                 Hello {{ strtoupper($order->first_name) }}, your
-                                                                order is {{$order->status}}
+                                                                order is {{ $order->status }}
                                                                 <br>
                                                             </td>
                                                         </tr>
@@ -414,12 +414,12 @@
                                                                     @foreach ($orderItems as $item)
                                                                         <tr>
                                                                             <td width="130">
-                                                                               @php  $imagePath = isset($item->path) ? "https://storage.googleapis.com/bakersluxury/". $item->path : 'http://via.placeholder.com/130'; @endphp
-                                                                              {{--  @php dd ($imagePath); @endphp --}}
+                                                                                @php  $imagePath = isset($item->path) ? "https://storage.googleapis.com/bakersluxury/". $item->path : 'http://via.placeholder.com/130'; @endphp
+                                                                                {{--  @php dd ($imagePath); @endphp --}}
                                                                                 <img width="130"
                                                                                     style="display:block;width:100%;max-width:130px;"
                                                                                     alt="img"
-                                                                                    src="{{$imagePath}}">
+                                                                                    src="{{ $imagePath }}">
                                                                             </td>
                                                                             <td width="20">&nbsp;</td>
                                                                             <td width="250">
@@ -428,18 +428,20 @@
                                                                                     <tr>
                                                                                         <td
                                                                                             style="font-family:'Josefin Sans', Arial, Helvetica, sans-serif;font-size: 18px;color: #282828;line-height: 21px;">
-                                                                                            {{$item->name}}
+                                                                                            {{ $item->name }}
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td
                                                                                             style="font-family:'Open Sans', Arial, Helvetica, sans-serif;font-size: 14px;color: #282828;line-height: 16px;">
-                                                                                            {{$item->options}}</td>
+                                                                                            {{ $item->options }}</td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td
                                                                                             style="font-family:'Open Sans', Arial, Helvetica, sans-serif;font-size: 14px;color: #282828;line-height: 21px;">
-                                                                                            Quantity : {{$item->itemquantity}}</td>
+                                                                                            Quantity :
+                                                                                            {{ $item->itemquantity }}
+                                                                                        </td>
                                                                                     </tr>
 
                                                                                 </table>
@@ -451,7 +453,7 @@
                                                                                     <tr>
                                                                                         <td align="right"
                                                                                             style="font-family:'Open Sans', Arial, Helvetica, sans-serif;font-size: 18px;color: #282828;">
-                                                                                            ₦{{$item->price}}</td>
+                                                                                            ₦{{ $item->price }}</td>
                                                                                     </tr>
 
 
@@ -497,7 +499,7 @@
                                                                         <td>&nbsp;</td>
                                                                         <td align="right"
                                                                             style="font-family:'Open Sans', Arial, Helvetica, sans-serif;font-size: 14px;color: #282828;">
-                                                                            ${{ $order->total_price }}</td>
+                                                                            ₦{{ $order->total_price }}</td>
                                                                     </tr>
 
 
@@ -508,7 +510,7 @@
                                                                         <td>&nbsp;</td>
                                                                         <td align="right"
                                                                             style="font-family:'Open Sans', Arial, Helvetica, sans-serif;font-size: 14px;color: #282828;text-decoration: ">
-                                                                            -${{$order->discount}}</td>
+                                                                            -₦{{ $order->discount }}</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td
@@ -517,7 +519,7 @@
                                                                         <td>&nbsp;</td>
                                                                         <td align="right"
                                                                             style="font-family:'Open Sans', Arial, Helvetica, sans-serif;font-size: 18px;color: #282828;">
-                                                                            <strong>${{ $order->total_price }}</strong>
+                                                                            <strong>₦{{ $order->total_price }}</strong>
                                                                         </td>
                                                                     </tr>
 
@@ -716,8 +718,9 @@
                                                                                 <tr>
                                                                                     <td
                                                                                         style="font-family:'Open Sans', Arial, Helvetica, sans-serif;font-size: 13px;color: #282828;">
-                                                                                        {{ $order->payment_method }} <br/>
-                                                                                        ₦{{$order->shipping_price}}
+                                                                                        {{ $order->payment_method }}
+                                                                                        <br />
+                                                                                        ₦{{ $order->shipping_price }}
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -845,7 +848,8 @@
                                                             <td align="center"
                                                                 style="font-family:'Roboto', Arial, Helvetica, sans-serif;font-size: 13px;color: #dadada;line-height: 19px;">
                                                                 This email was sent to : {{ $order->email }}<br>
-                                                                For any questions please send to info@houseofBakersluxury.com
+                                                                For any questions please send to
+                                                                info@houseofBakersluxury.com
                                                             </td>
                                                         </tr>
                                                         <tr>
