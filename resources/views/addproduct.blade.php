@@ -197,6 +197,23 @@
                                                 data-max-file-size="2M" data-max-height="2000">
                                         </div>
 
+                                        <div class="col-md-12">
+                                            <label class="form-label">Additional Product Images (Optional)</label>
+                                            <small class="d-block text-muted mb-2">Select Product Image (1000x1500)</small>
+                                            <input type="file" name="imageproductimagethree" id="input-file-to-destroy"
+                                                class="dropify" data-allowed-formats="portrait square"
+                                                data-max-file-size="2M" data-max-height="2000">
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <label class="form-label">Additional Product Images (Optional)</label>
+                                            <small class="d-block text-muted mb-2">Select Product Image (1000x1500)</small>
+                                            <input type="file" name="imageproductimagefour" id="input-file-to-destroy"
+                                                class="dropify" data-allowed-formats="portrait square"
+                                                data-max-file-size="2M" data-max-height="2000">
+                                        </div>
+
+
 
                                         <div class="col-md-12">
 

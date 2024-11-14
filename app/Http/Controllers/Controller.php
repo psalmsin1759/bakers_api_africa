@@ -17,6 +17,7 @@ use App\Models\Store;
 use App\Models\Coupon;
 use App\Models\Admin;
 use Session;
+use Illuminate\Support\Facades\Hash;
 
 class Controller extends BaseController
 {
@@ -24,6 +25,13 @@ class Controller extends BaseController
 
     public function login(){
         return view("login");
+    }
+
+    public function hash(){
+        $password = 'pass'; 
+$hashedPassword = Hash::make($password);
+
+dd( $hashedPassword);
     }
 
     public function index(){

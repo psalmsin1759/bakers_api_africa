@@ -141,7 +141,7 @@ class ProductController extends Controller
 
         }
 
-        if ($request->hasFile("imageproductimagethree") && $request->imageproductimagetwo instanceof \Illuminate\Http\UploadedFile) {
+        if ($request->hasFile("imageproductimagethree") && $request->imageproductimagethree instanceof \Illuminate\Http\UploadedFile) {
             $path = GoogleCloudStorage::uploadFile($request->imageproductimagethree, "products");   
             ProductImage::create([
                 "product_id" => $productID,
@@ -150,7 +150,24 @@ class ProductController extends Controller
 
 
         }
+
+        if ($request->hasFile("imageproductimagefour") && $request->imageproductimagefour instanceof \Illuminate\Http\UploadedFile) {
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimagefour, "products");   
+            ProductImage::create([
+                "product_id" => $productID,
+                "path" => $path
+            ]);
+        }
+
+        if ($request->hasFile("imageproductimagefive") && $request->imageproductimagefive instanceof \Illuminate\Http\UploadedFile) {
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimagefive, "products");   
+            ProductImage::create([
+                "product_id" => $productID,
+                "path" => $path
+            ]);
+        }
   
+        
 
         $category = $request->category;    
         if ($category != null){

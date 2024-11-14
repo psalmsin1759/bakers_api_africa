@@ -16,6 +16,8 @@ use \App\Http\Controllers\DeliveryMethodController;
 
 Route::get('/', [Controller::class, "login"]);
 
+Route::get('/hash', [Controller::class, "hash"]);
+
 Route::get('/login', [Controller::class, "login"]);
 Route::post('/login', [AdminController::class, "loginAction"]);
 
