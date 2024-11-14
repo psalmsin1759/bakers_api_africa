@@ -152,6 +152,38 @@
                                             data-max-file-size="2M" data-max-height="2000">
                                     </div>
 
+                                    <div class="col-md-6">
+                                        @if (isset($productImages[3]))
+                                            <img style="width: 200px; height: 300px"
+                                                src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $productImages[3]->path) }}"
+                                                alt="product_small_img1" />
+                                        @endif
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="form-label">Change Additional Product Images (Optional)</label>
+                                        <small class="d-block text-muted mb-2">Select Product Image (800x950)</small>
+                                        <input type="file" name="imageproductimagethree" id="input-file-to-destroy"
+                                            class="dropify" data-allowed-formats="portrait square"
+                                            data-max-file-size="2M" data-max-height="2000">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        @if (isset($productImages[4]))
+                                            <img style="width: 200px; height: 300px"
+                                                src="{{ secure_url('https://storage.googleapis.com/bakersluxury/' . $productImages[4]->path) }}"
+                                                alt="product_small_img1" />
+                                        @endif
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="form-label">Change Additional Product Images (Optional)</label>
+                                        <small class="d-block text-muted mb-2">Select Product Image (800x950)</small>
+                                        <input type="file" name="imageproductimagefour" id="input-file-to-destroy"
+                                            class="dropify" data-allowed-formats="portrait square"
+                                            data-max-file-size="2M" data-max-height="2000">
+                                    </div>
+
 
 
                                     <div class="col-12 mt-4">

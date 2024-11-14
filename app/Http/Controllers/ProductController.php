@@ -167,7 +167,7 @@ class ProductController extends Controller
             ]);
         }
   
-        
+
 
         $category = $request->category;    
         if ($category != null){
@@ -554,6 +554,28 @@ class ProductController extends Controller
             //ProductImage::where("product_id", $productid)->delete();
             
             $path = GoogleCloudStorage::uploadFile($request->imageproductimagetwo, "products");   
+            ProductImage::create([
+                "product_id" => $productid,
+                "path" => $path
+            ]);
+        }
+
+        if ($request->hasFile("imageproductimagethree") && $request->imageproductimagethree instanceof \Illuminate\Http\UploadedFile) {
+
+            //ProductImage::where("product_id", $productid)->delete();
+            
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimagethree, "products");   
+            ProductImage::create([
+                "product_id" => $productid,
+                "path" => $path
+            ]);
+        }
+
+        if ($request->hasFile("imageproductimagefour") && $request->imageproductimagefour instanceof \Illuminate\Http\UploadedFile) {
+
+            //ProductImage::where("product_id", $productid)->delete();
+            
+            $path = GoogleCloudStorage::uploadFile($request->imageproductimagefour, "products");   
             ProductImage::create([
                 "product_id" => $productid,
                 "path" => $path
