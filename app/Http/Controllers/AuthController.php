@@ -7,13 +7,14 @@ use \App\Http\Requests\LoginRequest;
 use \App\Http\Requests\RegisterRequest;
 use App\Models\Customer;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Http;
 
 class AuthController extends Controller
 {
 
     public function register(RegisterRequest $request){
        
-        //$data = $request->validate();
+      
 
         $data = $request->validate([
             'email' => 'required|email',
@@ -26,7 +27,33 @@ class AuthController extends Controller
             'postal_code' => 'sometimes', // Optional field
             'state' => 'required',
             'country' => 'required',
+            'captchaToken' => 'required'
         ]);
+
+       
+        
+        // Validate that the reCAPTCHA token is provided
+        if (!isset($data['captchaToken'])) {
+            return response()->json([
+                'success' => false,
+                'message' => 'CAPTCHA token is missing.',
+            ], 400);
+        }
+
+        // Verify the reCAPTCHA token with Google
+        $captchaResponse = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => env('RECAPTCHA_SECRET_KEY'), // Your reCAPTCHA secret key
+            'response' => $data['captchaToken'],
+        ]);
+
+        $captchaResult = $captchaResponse->json();
+
+        if (!$captchaResult['success']) {
+            return response()->json([
+                'success' => false,
+                'message' => 'CAPTCHA verification failed.',
+            ], 400);
+        }
        
         
         $customer = new Customer();
@@ -59,6 +86,32 @@ class AuthController extends Controller
     public function webLogin (LoginRequest $request){
 
         $data = $request->validated();
+
+        // Validate that the reCAPTCHA token is provided
+        if (!isset($data['captchaToken'])) {
+            return response()->json([
+                'success' => false,
+                'message' => 'CAPTCHA token is missing.',
+            ], 400);
+        }
+
+        // Verify the reCAPTCHA token with Google
+        $captchaResponse = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => env('RECAPTCHA_SECRET_KEY'), 
+            'response' => $data['captchaToken'],
+        ]);
+
+        $captchaResult = $captchaResponse->json();
+
+        if (!$captchaResult['success']) {
+            return response()->json([
+                'success' => false,
+                'message' => 'CAPTCHA verification failed.',
+            ], 400);
+        }
+
+
+       
 
         $customer = Customer::where('email', $data['email'])->first();
        
