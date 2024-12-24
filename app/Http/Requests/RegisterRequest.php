@@ -42,6 +42,7 @@ class RegisterRequest extends FormRequest
             'postal_code' => 'sometimes', // Optional field
             'state' => 'required',
             'country' => 'required',
+            'captchaToken' => 'required'
         ];
     }
 
