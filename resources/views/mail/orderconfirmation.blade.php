@@ -195,7 +195,7 @@
                 <table class="row" style="width:600px;max-width:600px;" width="600" cellspacing="0"
                     cellpadding="0" border="0" align="center">
                     <tr>
-                        <td bgcolor="#282828" align="center">
+                        <td bgcolor="#d3d33d3" align="center">
 
                             <!--wrapper-->
                             <table class="row" style="width:540px;max-width:540px;" width="540" cellspacing="0"
@@ -224,7 +224,7 @@
                                                                     <tr>
                                                                         <td width="200" align="left">
                                                                             <a href="#" target="_blank"
-                                                                                style="color: #ffffff">Bakersluxury</a>
+                                                                                style="color: #ffffff"><img sr="{{secure_assets("images/bakerslogo.png")}}" height="70" width="259" alt="BakersLuxury" /></a>
                                                                         </td>
                                                                         <td>&nbsp;</td>
                                                                         <td align="right"
