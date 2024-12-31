@@ -163,7 +163,7 @@
                         <td align="center" class="masthead">
 
                            
-                            <img sr="https://africabackend.bakersluxury.com/images/bakerslogo.png" height="70" width="259" alt="BakersLuxury" />
+                            <img src="https://africabackend.bakersluxury.com/images/bakerslogo.png" height="70" width="259" alt="BakersLuxury" />
 
                             {{-- <img style="height:50px" src="https://www.nodirectmessage.com/secure_assets/images/nodmlogowhite.png" /> --}}
 
