@@ -849,7 +849,7 @@
                                                                 style="font-family:'Roboto', Arial, Helvetica, sans-serif;font-size: 13px;color: #dadada;line-height: 19px;">
                                                                 This email was sent to : {{ $order->email }}<br>
                                                                 For any questions please send to
-                                                                info@houseofBakersluxury.com
+                                                                info@bakersluxury.com
                                                             </td>
                                                         </tr>
                                                         <tr>
