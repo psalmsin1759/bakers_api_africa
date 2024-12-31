@@ -195,7 +195,7 @@
                 <table class="row" style="width:600px;max-width:600px;" width="600" cellspacing="0"
                     cellpadding="0" border="0" align="center">
                     <tr>
-                        <td bgcolor="#d3d33d3" align="center">
+                        <td bgcolor="#808080" align="center">
 
                             <!--wrapper-->
                             <table class="row" style="width:540px;max-width:540px;" width="540" cellspacing="0"

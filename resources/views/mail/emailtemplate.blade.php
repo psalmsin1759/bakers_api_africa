@@ -28,7 +28,7 @@
         }
 
         a {
-            color: #4566D8;
+            color: #808080;
             text-decoration: none;
         }
 
