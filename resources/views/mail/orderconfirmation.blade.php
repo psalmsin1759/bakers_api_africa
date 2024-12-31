@@ -224,7 +224,7 @@
                                                                     <tr>
                                                                         <td width="200" align="left">
                                                                             <a href="#" target="_blank"
-                                                                                style="color: #ffffff"><img sr="{{secure_assets("images/bakerslogo.png")}}" height="70" width="259" alt="BakersLuxury" /></a>
+                                                                                style="color: #ffffff"><img sr="https://africabackend.bakersluxury.com/images/bakerslogo.png" height="70" width="259" alt="BakersLuxury" /></a>
                                                                         </td>
                                                                         <td>&nbsp;</td>
                                                                         <td align="right"

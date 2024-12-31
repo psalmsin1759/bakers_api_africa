@@ -162,7 +162,8 @@
                     <tr>
                         <td align="center" class="masthead">
 
-                            <h1>BakersLuxury</h1>
+                           
+                            <img sr="https://africabackend.bakersluxury.com/images/bakerslogo.png" height="70" width="259" alt="BakersLuxury" />
 
                             {{-- <img style="height:50px" src="https://www.nodirectmessage.com/secure_assets/images/nodmlogowhite.png" /> --}}
 
