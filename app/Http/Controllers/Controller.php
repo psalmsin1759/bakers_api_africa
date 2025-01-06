@@ -105,7 +105,7 @@ dd( $hashedPassword);
             
             foreach($topSell as $item){
 
-                $productName[] = $item->product_name;
+                $productName[] = $item->name;
                 $productQuantity[] = $item->total;
     
             }
